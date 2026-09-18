@@ -1,0 +1,879 @@
+train_number,train_name,journey_date,day_of_week,source_station,destination_station,current_station,next_station,current_delay,distance_to_next,scheduled_travel_minutes,target_delay
+12029,Swarn Shatabdi Express,2026-09-11,Friday,New Delhi,Amritsar Jn,NDLS,UMB,12.0,199.0,141.0,2.0
+12029,Swarn Shatabdi Express,2026-09-11,Friday,New Delhi,Amritsar Jn,UMB,RPJ,2.0,28.0,19.0,10.0
+12029,Swarn Shatabdi Express,2026-09-11,Friday,New Delhi,Amritsar Jn,RPJ,LDH,10.0,85.0,64.0,-4.0
+12029,Swarn Shatabdi Express,2026-09-11,Friday,New Delhi,Amritsar Jn,LDH,PGW,17.0,36.0,29.0,20.0
+12029,Swarn Shatabdi Express,2026-09-11,Friday,New Delhi,Amritsar Jn,PGW,JUC,22.0,21.0,24.0,16.0
+12029,Swarn Shatabdi Express,2026-09-11,Friday,New Delhi,Amritsar Jn,JUC,BEAS,17.0,37.0,30.0,14.0
+12029,Swarn Shatabdi Express,2026-09-11,Friday,New Delhi,Amritsar Jn,BEAS,ASR,14.0,42.0,50.0,1.0
+12029,Swarn Shatabdi Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,NDLS,UMB,13.0,199.0,141.0,-1.0
+12029,Swarn Shatabdi Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,UMB,RPJ,3.0,28.0,19.0,9.0
+12029,Swarn Shatabdi Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,RPJ,LDH,9.0,85.0,64.0,3.0
+12029,Swarn Shatabdi Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,LDH,PGW,3.0,36.0,29.0,11.0
+12029,Swarn Shatabdi Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,PGW,JUC,12.0,21.0,24.0,10.0
+12029,Swarn Shatabdi Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,JUC,BEAS,10.0,37.0,30.0,10.0
+12029,Swarn Shatabdi Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,BEAS,ASR,12.0,42.0,50.0,-4.0
+12029,Swarn Shatabdi Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,NDLS,UMB,2.0,199.0,141.0,-4.0
+12029,Swarn Shatabdi Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,UMB,RPJ,0.0,28.0,19.0,9.0
+12029,Swarn Shatabdi Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,RPJ,LDH,9.0,85.0,64.0,3.0
+12029,Swarn Shatabdi Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,LDH,PGW,7.0,36.0,29.0,17.0
+12029,Swarn Shatabdi Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,PGW,JUC,17.0,21.0,24.0,12.0
+12029,Swarn Shatabdi Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,JUC,BEAS,13.0,37.0,30.0,11.0
+12029,Swarn Shatabdi Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,BEAS,ASR,15.0,42.0,50.0,7.0
+12029,Swarn Shatabdi Express,2026-09-14,Monday,New Delhi,Amritsar Jn,NDLS,UMB,16.0,199.0,141.0,-3.0
+12029,Swarn Shatabdi Express,2026-09-14,Monday,New Delhi,Amritsar Jn,UMB,RPJ,1.0,28.0,19.0,9.0
+12029,Swarn Shatabdi Express,2026-09-14,Monday,New Delhi,Amritsar Jn,RPJ,LDH,9.0,85.0,64.0,-7.0
+12029,Swarn Shatabdi Express,2026-09-14,Monday,New Delhi,Amritsar Jn,LDH,PGW,1.0,36.0,29.0,5.0
+12029,Swarn Shatabdi Express,2026-09-14,Monday,New Delhi,Amritsar Jn,PGW,JUC,6.0,21.0,24.0,10.0
+12029,Swarn Shatabdi Express,2026-09-14,Monday,New Delhi,Amritsar Jn,JUC,BEAS,10.0,37.0,30.0,10.0
+12029,Swarn Shatabdi Express,2026-09-14,Monday,New Delhi,Amritsar Jn,BEAS,ASR,11.0,42.0,50.0,3.0
+12029,Swarn Shatabdi Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,NDLS,UMB,11.0,199.0,141.0,0.0
+12029,Swarn Shatabdi Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,UMB,RPJ,2.0,28.0,19.0,8.0
+12029,Swarn Shatabdi Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,RPJ,LDH,8.0,85.0,64.0,-7.0
+12029,Swarn Shatabdi Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,LDH,PGW,3.0,36.0,29.0,21.0
+12029,Swarn Shatabdi Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,PGW,JUC,21.0,21.0,24.0,15.0
+12029,Swarn Shatabdi Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,JUC,BEAS,15.0,37.0,30.0,12.0
+12029,Swarn Shatabdi Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,BEAS,ASR,13.0,42.0,50.0,2.0
+12029,Swarn Shatabdi Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,NDLS,UMB,11.0,199.0,141.0,-5.0
+12029,Swarn Shatabdi Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,UMB,RPJ,1.0,28.0,19.0,11.0
+12029,Swarn Shatabdi Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,RPJ,LDH,11.0,85.0,64.0,-3.0
+12029,Swarn Shatabdi Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,LDH,PGW,2.0,36.0,29.0,6.0
+12029,Swarn Shatabdi Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,PGW,JUC,6.0,21.0,24.0,-1.0
+12029,Swarn Shatabdi Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,JUC,BEAS,0.0,37.0,30.0,-3.0
+12029,Swarn Shatabdi Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,BEAS,ASR,1.0,42.0,50.0,-9.0
+12030,Swarn Shatabdi Express,2026-09-11,Friday,Amritsar Jn,New Delhi,ASR,BEAS,5.0,43.0,28.0,7.0
+12030,Swarn Shatabdi Express,2026-09-11,Friday,Amritsar Jn,New Delhi,BEAS,JUC,7.0,36.0,33.0,7.0
+12030,Swarn Shatabdi Express,2026-09-11,Friday,Amritsar Jn,New Delhi,JUC,PGW,7.0,21.0,18.0,8.0
+12030,Swarn Shatabdi Express,2026-09-11,Friday,Amritsar Jn,New Delhi,PGW,LDH,8.0,36.0,34.0,9.0
+12030,Swarn Shatabdi Express,2026-09-11,Friday,Amritsar Jn,New Delhi,LDH,RPJ,12.0,86.0,57.0,0.0
+12030,Swarn Shatabdi Express,2026-09-11,Friday,Amritsar Jn,New Delhi,RPJ,UMB,4.0,28.0,32.0,0.0
+12030,Swarn Shatabdi Express,2026-09-11,Friday,Amritsar Jn,New Delhi,UMB,NDLS,0.0,198.0,140.0,0.0
+12030,Swarn Shatabdi Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,ASR,BEAS,6.0,43.0,28.0,6.0
+12030,Swarn Shatabdi Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,BEAS,JUC,6.0,36.0,33.0,2.0
+12030,Swarn Shatabdi Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,JUC,PGW,4.0,21.0,18.0,6.0
+12030,Swarn Shatabdi Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,PGW,LDH,6.0,36.0,34.0,2.0
+12030,Swarn Shatabdi Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,LDH,RPJ,3.0,86.0,57.0,-4.0
+12030,Swarn Shatabdi Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,RPJ,UMB,1.0,28.0,32.0,-6.0
+12030,Swarn Shatabdi Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,UMB,NDLS,0.0,198.0,140.0,7.0
+12030,Swarn Shatabdi Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,ASR,BEAS,10.0,43.0,28.0,10.0
+12030,Swarn Shatabdi Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,BEAS,JUC,10.0,36.0,33.0,9.0
+12030,Swarn Shatabdi Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,JUC,PGW,10.0,21.0,18.0,11.0
+12030,Swarn Shatabdi Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,PGW,LDH,11.0,36.0,34.0,14.0
+12030,Swarn Shatabdi Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,LDH,RPJ,14.0,86.0,57.0,5.0
+12030,Swarn Shatabdi Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,RPJ,UMB,5.0,28.0,32.0,-3.0
+12030,Swarn Shatabdi Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,UMB,NDLS,0.0,198.0,140.0,3.0
+12030,Swarn Shatabdi Express,2026-09-14,Monday,Amritsar Jn,New Delhi,ASR,BEAS,9.0,43.0,28.0,10.0
+12030,Swarn Shatabdi Express,2026-09-14,Monday,Amritsar Jn,New Delhi,BEAS,JUC,10.0,36.0,33.0,6.0
+12030,Swarn Shatabdi Express,2026-09-14,Monday,Amritsar Jn,New Delhi,JUC,PGW,6.0,21.0,18.0,6.0
+12030,Swarn Shatabdi Express,2026-09-14,Monday,Amritsar Jn,New Delhi,PGW,LDH,6.0,36.0,34.0,5.0
+12030,Swarn Shatabdi Express,2026-09-14,Monday,Amritsar Jn,New Delhi,LDH,RPJ,5.0,86.0,57.0,-3.0
+12030,Swarn Shatabdi Express,2026-09-14,Monday,Amritsar Jn,New Delhi,RPJ,UMB,1.0,28.0,32.0,-7.0
+12030,Swarn Shatabdi Express,2026-09-14,Monday,Amritsar Jn,New Delhi,UMB,NDLS,0.0,198.0,140.0,2.0
+12030,Swarn Shatabdi Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,ASR,BEAS,13.0,43.0,28.0,13.0
+12030,Swarn Shatabdi Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,BEAS,JUC,13.0,36.0,33.0,1.0
+12030,Swarn Shatabdi Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,JUC,PGW,1.0,21.0,18.0,2.0
+12030,Swarn Shatabdi Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,PGW,LDH,2.0,36.0,34.0,7.0
+12030,Swarn Shatabdi Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,LDH,RPJ,7.0,86.0,57.0,9.0
+12030,Swarn Shatabdi Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,RPJ,UMB,9.0,28.0,32.0,0.0
+12030,Swarn Shatabdi Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,UMB,NDLS,1.0,198.0,140.0,7.0
+12030,Swarn Shatabdi Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,ASR,BEAS,4.0,43.0,28.0,8.0
+12030,Swarn Shatabdi Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,BEAS,JUC,8.0,36.0,33.0,4.0
+12030,Swarn Shatabdi Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,JUC,PGW,4.0,21.0,18.0,2.0
+12030,Swarn Shatabdi Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,PGW,LDH,3.0,36.0,34.0,1.0
+12030,Swarn Shatabdi Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,LDH,RPJ,1.0,86.0,57.0,-4.0
+12030,Swarn Shatabdi Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,RPJ,UMB,2.0,28.0,32.0,-10.0
+12030,Swarn Shatabdi Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,UMB,NDLS,0.0,198.0,140.0,-1.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,NDLS,SNP,11.0,45.0,40.0,7.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,SNP,PNP,9.0,45.0,28.0,20.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,PNP,KUN,20.0,34.0,22.0,20.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,KUN,KKDE,20.0,33.0,23.0,20.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,KKDE,UMB,20.0,42.0,81.0,-19.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,UMB,RPJ,5.0,28.0,19.0,13.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,RPJ,KNN,14.0,43.0,26.0,15.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,KNN,LDH,15.0,42.0,48.0,1.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,LDH,PGW,3.0,36.0,29.0,8.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,PGW,JUC,10.0,21.0,29.0,1.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,JUC,BEAS,1.0,37.0,28.0,-1.0
+12497,Shan-e-Punjab Express,2026-09-11,Friday,New Delhi,Amritsar Jn,BEAS,ASR,4.0,42.0,50.0,17.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,NDLS,SNP,14.0,45.0,40.0,20.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,SNP,PNP,20.0,45.0,28.0,34.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,PNP,KUN,35.0,34.0,22.0,51.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,KUN,KKDE,51.0,33.0,23.0,55.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,KKDE,UMB,58.0,42.0,81.0,8.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,UMB,RPJ,10.0,28.0,19.0,19.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,RPJ,KNN,20.0,43.0,26.0,20.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,KNN,LDH,20.0,42.0,48.0,9.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,LDH,PGW,12.0,36.0,29.0,16.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,PGW,JUC,18.0,21.0,29.0,8.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,JUC,BEAS,9.0,37.0,28.0,9.0
+12497,Shan-e-Punjab Express,2026-09-12,Saturday,New Delhi,Amritsar Jn,BEAS,ASR,12.0,42.0,50.0,7.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,NDLS,SNP,5.0,45.0,40.0,9.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,SNP,PNP,9.0,45.0,28.0,22.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,PNP,KUN,23.0,34.0,22.0,22.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,KUN,KKDE,22.0,33.0,23.0,22.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,KKDE,UMB,31.0,42.0,81.0,-23.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,UMB,RPJ,20.0,28.0,19.0,28.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,RPJ,KNN,28.0,43.0,26.0,28.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,KNN,LDH,28.0,42.0,48.0,13.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,LDH,PGW,18.0,36.0,29.0,23.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,PGW,JUC,25.0,21.0,29.0,6.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,JUC,BEAS,16.0,37.0,28.0,10.0
+12497,Shan-e-Punjab Express,2026-09-13,Sunday,New Delhi,Amritsar Jn,BEAS,ASR,14.0,42.0,50.0,9.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,NDLS,SNP,29.0,45.0,40.0,22.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,SNP,PNP,22.0,45.0,28.0,74.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,PNP,KUN,82.0,34.0,22.0,80.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,KUN,KKDE,81.0,33.0,23.0,86.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,KKDE,UMB,87.0,42.0,81.0,84.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,UMB,RPJ,85.0,28.0,19.0,91.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,RPJ,KNN,92.0,43.0,26.0,95.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,KNN,LDH,95.0,42.0,48.0,79.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,LDH,PGW,86.0,36.0,29.0,93.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,PGW,JUC,93.0,21.0,29.0,81.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,JUC,BEAS,81.0,37.0,28.0,81.0
+12497,Shan-e-Punjab Express,2026-09-14,Monday,New Delhi,Amritsar Jn,BEAS,ASR,82.0,42.0,50.0,68.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,NDLS,SNP,14.0,45.0,40.0,6.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,SNP,PNP,6.0,45.0,28.0,18.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,PNP,KUN,18.0,34.0,22.0,33.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,KUN,KKDE,33.0,33.0,23.0,32.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,KKDE,UMB,37.0,42.0,81.0,-6.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,UMB,RPJ,0.0,28.0,19.0,8.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,RPJ,KNN,8.0,43.0,26.0,8.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,KNN,LDH,8.0,42.0,48.0,-5.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,LDH,PGW,1.0,36.0,29.0,23.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,PGW,JUC,23.0,21.0,29.0,7.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,JUC,BEAS,20.0,37.0,28.0,26.0
+12497,Shan-e-Punjab Express,2026-09-15,Tuesday,New Delhi,Amritsar Jn,BEAS,ASR,26.0,42.0,50.0,17.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,NDLS,SNP,5.0,45.0,40.0,14.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,SNP,PNP,15.0,45.0,28.0,24.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,PNP,KUN,24.0,34.0,22.0,23.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,KUN,KKDE,24.0,33.0,23.0,22.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,KKDE,UMB,28.0,42.0,81.0,-8.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,UMB,RPJ,1.0,28.0,19.0,12.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,RPJ,KNN,13.0,43.0,26.0,12.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,KNN,LDH,12.0,42.0,48.0,-2.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,LDH,PGW,3.0,36.0,29.0,9.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,PGW,JUC,10.0,21.0,29.0,1.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,JUC,BEAS,12.0,37.0,28.0,9.0
+12497,Shan-e-Punjab Express,2026-09-16,Wednesday,New Delhi,Amritsar Jn,BEAS,ASR,9.0,42.0,50.0,8.0
+12497,Shan-e-Punjab Express,2026-09-17,Thursday,New Delhi,Amritsar Jn,NDLS,SNP,9.0,45.0,40.0,12.0
+12497,Shan-e-Punjab Express,2026-09-17,Thursday,New Delhi,Amritsar Jn,SNP,PNP,13.0,45.0,28.0,31.0
+12497,Shan-e-Punjab Express,2026-09-17,Thursday,New Delhi,Amritsar Jn,PNP,KUN,31.0,34.0,22.0,27.0
+12497,Shan-e-Punjab Express,2026-09-17,Thursday,New Delhi,Amritsar Jn,KUN,KKDE,37.0,33.0,23.0,42.0
+12497,Shan-e-Punjab Express,2026-09-17,Thursday,New Delhi,Amritsar Jn,KKDE,UMB,43.0,42.0,81.0,-8.0
+12497,Shan-e-Punjab Express,2026-09-17,Thursday,New Delhi,Amritsar Jn,UMB,RPJ,0.0,28.0,19.0,11.0
+12497,Shan-e-Punjab Express,2026-09-17,Thursday,New Delhi,Amritsar Jn,RPJ,KNN,11.0,43.0,26.0,11.0
+12497,Shan-e-Punjab Express,2026-09-17,Thursday,New Delhi,Amritsar Jn,KNN,LDH,11.0,42.0,48.0,-2.0
+12497,Shan-e-Punjab Express,2026-09-17,Thursday,New Delhi,Amritsar Jn,LDH,PGW,7.0,36.0,29.0,38.0
+12497,Shan-e-Punjab Express,2026-09-17,Thursday,New Delhi,Amritsar Jn,PGW,JUC,45.0,21.0,29.0,49.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,ASR,BEAS,8.0,43.0,28.0,13.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,BEAS,JUC,13.0,36.0,33.0,10.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,JUC,PGW,10.0,21.0,18.0,9.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,PGW,DDL,9.0,43.0,57.0,-4.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,DDL,KNN,0.0,35.0,28.0,-4.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,KNN,RPJ,0.0,44.0,25.0,2.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,RPJ,UMB,3.0,28.0,38.0,0.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,UMB,KKDE,1.0,41.0,30.0,3.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,KKDE,KUN,3.0,33.0,23.0,5.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,KUN,PNP,7.0,35.0,22.0,12.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,PNP,SNP,12.0,45.0,28.0,15.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,SNP,SZM,16.0,40.0,32.0,16.0
+12498,Shan-e-Punjab Express,2026-09-11,Friday,Amritsar Jn,New Delhi,SZM,NDLS,21.0,4.0,40.0,-2.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,ASR,BEAS,10.0,43.0,28.0,10.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,BEAS,JUC,10.0,36.0,33.0,3.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,JUC,PGW,3.0,21.0,18.0,2.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,PGW,DDL,2.0,43.0,57.0,-7.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,DDL,KNN,0.0,35.0,28.0,-7.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,KNN,RPJ,0.0,44.0,25.0,-1.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,RPJ,UMB,0.0,28.0,38.0,-2.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,UMB,KKDE,0.0,41.0,30.0,1.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,KKDE,KUN,1.0,33.0,23.0,0.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,KUN,PNP,2.0,35.0,22.0,4.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,PNP,SNP,5.0,45.0,28.0,10.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,SNP,SZM,11.0,40.0,32.0,7.0
+12498,Shan-e-Punjab Express,2026-09-12,Saturday,Amritsar Jn,New Delhi,SZM,NDLS,20.0,4.0,40.0,12.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,ASR,BEAS,18.0,43.0,28.0,14.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,BEAS,JUC,19.0,36.0,33.0,21.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,JUC,PGW,21.0,21.0,18.0,31.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,PGW,DDL,31.0,43.0,57.0,17.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,DDL,KNN,17.0,35.0,28.0,9.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,KNN,RPJ,9.0,44.0,25.0,10.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,RPJ,UMB,11.0,28.0,38.0,-1.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,UMB,KKDE,1.0,41.0,30.0,2.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,KKDE,KUN,4.0,33.0,23.0,1.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,KUN,PNP,2.0,35.0,22.0,6.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,PNP,SNP,6.0,45.0,28.0,17.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,SNP,SZM,24.0,40.0,32.0,26.0
+12498,Shan-e-Punjab Express,2026-09-13,Sunday,Amritsar Jn,New Delhi,SZM,NDLS,29.0,4.0,40.0,3.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,ASR,BEAS,72.0,43.0,28.0,75.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,BEAS,JUC,78.0,36.0,33.0,75.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,JUC,PGW,75.0,21.0,18.0,79.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,PGW,DDL,80.0,43.0,57.0,82.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,DDL,KNN,90.0,35.0,28.0,85.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,KNN,RPJ,85.0,44.0,25.0,86.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,RPJ,UMB,87.0,28.0,38.0,73.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,UMB,KKDE,73.0,41.0,30.0,91.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,KKDE,KUN,102.0,33.0,23.0,100.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,KUN,PNP,102.0,35.0,22.0,116.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,PNP,SNP,118.0,45.0,28.0,143.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,SNP,SZM,145.0,40.0,32.0,140.0
+12498,Shan-e-Punjab Express,2026-09-14,Monday,Amritsar Jn,New Delhi,SZM,NDLS,143.0,4.0,40.0,117.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,ASR,BEAS,14.0,43.0,28.0,13.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,BEAS,JUC,13.0,36.0,33.0,10.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,JUC,PGW,10.0,21.0,18.0,10.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,PGW,DDL,11.0,43.0,57.0,-8.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,DDL,KNN,1.0,35.0,28.0,-5.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,KNN,RPJ,2.0,44.0,25.0,5.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,RPJ,UMB,5.0,28.0,38.0,-2.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,UMB,KKDE,2.0,41.0,30.0,4.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,KKDE,KUN,5.0,33.0,23.0,4.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,KUN,PNP,5.0,35.0,22.0,9.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,PNP,SNP,9.0,45.0,28.0,16.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,SNP,SZM,18.0,40.0,32.0,16.0
+12498,Shan-e-Punjab Express,2026-09-15,Tuesday,Amritsar Jn,New Delhi,SZM,NDLS,19.0,4.0,40.0,1.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,ASR,BEAS,23.0,43.0,28.0,27.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,BEAS,JUC,27.0,36.0,33.0,24.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,JUC,PGW,24.0,21.0,18.0,26.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,PGW,DDL,27.0,43.0,57.0,13.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,DDL,KNN,13.0,35.0,28.0,5.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,KNN,RPJ,6.0,44.0,25.0,6.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,RPJ,UMB,6.0,28.0,38.0,22.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,UMB,KKDE,22.0,41.0,30.0,19.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,KKDE,KUN,21.0,33.0,23.0,19.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,KUN,PNP,19.0,35.0,22.0,23.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,PNP,SNP,23.0,45.0,28.0,33.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,SNP,SZM,35.0,40.0,32.0,29.0
+12498,Shan-e-Punjab Express,2026-09-16,Wednesday,Amritsar Jn,New Delhi,SZM,NDLS,31.0,4.0,40.0,6.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,ASR,BEAS,13.0,43.0,28.0,13.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,BEAS,JUC,13.0,36.0,33.0,13.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,JUC,PGW,13.0,21.0,18.0,13.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,PGW,DDL,13.0,43.0,57.0,3.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,DDL,KNN,4.0,35.0,28.0,-2.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,KNN,RPJ,1.0,44.0,25.0,11.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,RPJ,UMB,11.0,28.0,38.0,-1.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,UMB,KKDE,0.0,41.0,30.0,9.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,KKDE,KUN,10.0,33.0,23.0,12.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,KUN,PNP,12.0,35.0,22.0,21.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,PNP,SNP,22.0,45.0,28.0,33.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,SNP,SZM,33.0,40.0,32.0,32.0
+12498,Shan-e-Punjab Express,2026-09-17,Thursday,Amritsar Jn,New Delhi,SZM,NDLS,33.0,4.0,40.0,13.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,BDTS,BVI,4.0,19.0,23.0,16.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,BVI,DRD,18.0,90.0,73.0,21.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,DRD,VAPI,21.0,50.0,28.0,22.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,VAPI,BL,23.0,24.0,22.0,24.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,BL,NVS,30.0,40.0,38.0,19.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,NVS,ST,24.0,29.0,62.0,13.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,ST,BH,14.0,59.0,46.0,17.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,BH,BRC,18.0,70.0,60.0,9.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,BRC,GDA,9.0,74.0,73.0,-5.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,GDA,DHD,0.0,74.0,50.0,20.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,DHD,MGN,22.0,33.0,25.0,20.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,MGN,RTM,21.0,80.0,76.0,15.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,RTM,KUH,19.0,28.0,29.0,14.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,KUH,NAD,15.0,14.0,39.0,-4.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,NAD,SGZ,1.0,91.0,53.0,19.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,SGZ,RMA,19.0,61.0,38.0,18.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,RMA,KOTA,18.0,73.0,65.0,-1.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,KOTA,SWM,1.0,108.0,73.0,5.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,SWM,GGC,5.0,63.0,65.0,-8.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,GGC,HAN,4.0,44.0,33.0,3.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,HAN,BXN,3.0,33.0,28.0,8.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,BXN,BTE,11.0,42.0,48.0,-11.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,BTE,MTJ,10.0,34.0,80.0,-6.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,MTJ,FDB,0.0,112.0,107.0,12.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,FDB,NZM,14.0,21.0,30.0,17.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,NZM,NDLS,20.0,7.0,44.0,10.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,NDLS,SZM,14.0,4.0,14.0,16.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,SZM,SNP,16.0,41.0,27.0,24.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,SNP,PNP,25.0,45.0,30.0,37.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,PNP,KUN,39.0,34.0,22.0,38.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,KUN,KKDE,41.0,33.0,23.0,40.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,KKDE,UMB,43.0,42.0,79.0,3.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,UMB,CDG,5.0,67.0,43.0,9.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,CDG,SASN,9.0,11.0,10.0,37.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,SASN,LDH,42.0,102.0,115.0,19.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,LDH,PGW,22.0,35.0,29.0,28.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,PGW,JRC,28.0,17.0,17.0,26.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,JRC,JUC,27.0,4.0,10.0,25.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,JUC,BEAS,28.0,37.0,31.0,23.0
+12925,Paschim Express,2026-09-11,Friday,Bandra Terminus,Amritsar Jn,BEAS,ASR,25.0,42.0,45.0,15.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,BDTS,BVI,0.0,19.0,23.0,-5.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,BVI,DRD,20.0,90.0,73.0,12.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,DRD,VAPI,13.0,50.0,28.0,29.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,VAPI,BL,29.0,24.0,22.0,19.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,BL,NVS,19.0,40.0,38.0,1.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,NVS,ST,1.0,29.0,62.0,-26.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,ST,BH,12.0,59.0,46.0,18.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,BH,BRC,20.0,70.0,60.0,9.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,BRC,GDA,9.0,74.0,73.0,-12.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,GDA,DHD,5.0,74.0,50.0,7.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,DHD,MGN,11.0,33.0,25.0,8.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,MGN,RTM,9.0,80.0,76.0,4.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,RTM,KUH,12.0,28.0,29.0,5.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,KUH,NAD,7.0,14.0,39.0,-10.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,NAD,SGZ,0.0,91.0,53.0,10.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,SGZ,RMA,10.0,61.0,38.0,12.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,RMA,KOTA,12.0,73.0,65.0,-7.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,KOTA,SWM,0.0,108.0,73.0,13.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,SWM,GGC,13.0,63.0,65.0,-9.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,GGC,HAN,3.0,44.0,33.0,1.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,HAN,BXN,1.0,33.0,28.0,5.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,BXN,BTE,8.0,42.0,48.0,-16.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,BTE,MTJ,0.0,34.0,80.0,-50.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,MTJ,FDB,0.0,112.0,107.0,12.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,FDB,NZM,14.0,21.0,30.0,28.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,NZM,NDLS,73.0,7.0,44.0,60.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,NDLS,SZM,60.0,4.0,14.0,59.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,SZM,SNP,61.0,41.0,27.0,67.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,SNP,PNP,68.0,45.0,30.0,82.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,PNP,KUN,84.0,34.0,22.0,85.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,KUN,KKDE,87.0,33.0,23.0,85.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,KKDE,UMB,86.0,42.0,79.0,37.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,UMB,CDG,39.0,67.0,43.0,50.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,CDG,SASN,50.0,11.0,10.0,45.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,SASN,LDH,46.0,102.0,115.0,12.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,LDH,PGW,15.0,35.0,29.0,17.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,PGW,JRC,18.0,17.0,17.0,14.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,JRC,JUC,15.0,4.0,10.0,11.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,JUC,BEAS,11.0,37.0,31.0,7.0
+12925,Paschim Express,2026-09-12,Saturday,Bandra Terminus,Amritsar Jn,BEAS,ASR,8.0,42.0,45.0,5.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,BDTS,BVI,9.0,19.0,23.0,12.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,BVI,DRD,22.0,90.0,73.0,21.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,DRD,VAPI,21.0,50.0,28.0,33.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,VAPI,BL,38.0,24.0,22.0,39.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,BL,NVS,39.0,40.0,38.0,29.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,NVS,ST,29.0,29.0,62.0,-1.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,ST,BH,0.0,59.0,46.0,10.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,BH,BRC,11.0,70.0,60.0,-3.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,BRC,GDA,0.0,74.0,73.0,-22.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,GDA,DHD,0.0,74.0,50.0,1.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,DHD,MGN,1.0,33.0,25.0,-1.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,MGN,RTM,0.0,80.0,76.0,24.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,RTM,KUH,26.0,28.0,29.0,7.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,KUH,NAD,7.0,14.0,39.0,8.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,NAD,SGZ,8.0,91.0,53.0,28.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,SGZ,RMA,33.0,61.0,38.0,38.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,RMA,KOTA,38.0,73.0,65.0,22.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,KOTA,SWM,25.0,108.0,73.0,21.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,SWM,GGC,22.0,63.0,65.0,3.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,GGC,HAN,6.0,44.0,33.0,2.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,HAN,BXN,2.0,33.0,28.0,1.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,BXN,BTE,3.0,42.0,48.0,-19.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,BTE,MTJ,23.0,34.0,80.0,0.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,MTJ,FDB,0.0,112.0,107.0,23.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,FDB,NZM,26.0,21.0,30.0,28.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,NZM,NDLS,31.0,7.0,44.0,13.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,NDLS,SZM,13.0,4.0,14.0,18.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,SZM,SNP,18.0,41.0,27.0,18.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,SNP,PNP,20.0,45.0,30.0,30.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,PNP,KUN,31.0,34.0,22.0,31.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,KUN,KKDE,47.0,33.0,23.0,47.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,KKDE,UMB,49.0,42.0,79.0,4.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,UMB,CDG,6.0,67.0,43.0,28.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,CDG,SASN,28.0,11.0,10.0,44.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,SASN,LDH,44.0,102.0,115.0,31.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,LDH,PGW,31.0,35.0,29.0,36.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,PGW,JRC,49.0,17.0,17.0,48.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,JRC,JUC,48.0,4.0,10.0,46.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,JUC,BEAS,46.0,37.0,31.0,56.0
+12925,Paschim Express,2026-09-13,Sunday,Bandra Terminus,Amritsar Jn,BEAS,ASR,58.0,42.0,45.0,47.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,BDTS,BVI,0.0,19.0,23.0,-8.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,BVI,DRD,24.0,90.0,73.0,13.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,DRD,VAPI,13.0,50.0,28.0,12.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,VAPI,BL,12.0,24.0,22.0,20.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,BL,NVS,20.0,40.0,38.0,13.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,NVS,ST,13.0,29.0,62.0,6.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,ST,BH,7.0,59.0,46.0,28.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,BH,BRC,28.0,70.0,60.0,13.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,BRC,GDA,13.0,74.0,73.0,-7.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,GDA,DHD,3.0,74.0,50.0,3.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,DHD,MGN,4.0,33.0,25.0,2.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,MGN,RTM,3.0,80.0,76.0,-11.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,RTM,KUH,6.0,28.0,29.0,-1.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,KUH,NAD,0.0,14.0,39.0,-21.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,NAD,SGZ,4.0,91.0,53.0,16.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,SGZ,RMA,16.0,61.0,38.0,11.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,RMA,KOTA,11.0,73.0,65.0,24.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,KOTA,SWM,24.0,108.0,73.0,22.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,SWM,GGC,25.0,63.0,65.0,2.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,GGC,HAN,4.0,44.0,33.0,10.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,HAN,BXN,10.0,33.0,28.0,14.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,BXN,BTE,15.0,42.0,48.0,-7.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,BTE,MTJ,16.0,34.0,80.0,-11.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,MTJ,FDB,0.0,112.0,107.0,20.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,FDB,NZM,25.0,21.0,30.0,28.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,NZM,NDLS,28.0,7.0,44.0,1.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,NDLS,SZM,5.0,4.0,14.0,6.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,SZM,SNP,6.0,41.0,27.0,14.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,SNP,PNP,14.0,45.0,30.0,26.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,PNP,KUN,26.0,34.0,22.0,25.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,KUN,KKDE,25.0,33.0,23.0,24.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,KKDE,UMB,29.0,42.0,79.0,-8.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,UMB,CDG,3.0,67.0,43.0,24.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,CDG,SASN,24.0,11.0,10.0,26.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,SASN,LDH,26.0,102.0,115.0,-2.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,LDH,PGW,7.0,35.0,29.0,10.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,PGW,JRC,13.0,17.0,17.0,12.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,JRC,JUC,12.0,4.0,10.0,9.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,JUC,BEAS,9.0,37.0,31.0,9.0
+12925,Paschim Express,2026-09-14,Monday,Bandra Terminus,Amritsar Jn,BEAS,ASR,9.0,42.0,45.0,6.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,BDTS,BVI,10.0,19.0,23.0,11.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,BVI,DRD,21.0,90.0,73.0,18.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,DRD,VAPI,19.0,50.0,28.0,19.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,VAPI,BL,19.0,24.0,22.0,25.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,BL,NVS,28.0,40.0,38.0,18.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,NVS,ST,19.0,29.0,62.0,5.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,ST,BH,10.0,59.0,46.0,26.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,BH,BRC,26.0,70.0,60.0,8.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,BRC,GDA,8.0,74.0,73.0,8.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,GDA,DHD,10.0,74.0,50.0,8.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,DHD,MGN,8.0,33.0,25.0,7.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,MGN,RTM,7.0,80.0,76.0,7.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,RTM,KUH,17.0,28.0,29.0,10.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,KUH,NAD,15.0,14.0,39.0,-4.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,NAD,SGZ,0.0,91.0,53.0,11.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,SGZ,RMA,11.0,61.0,38.0,12.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,RMA,KOTA,12.0,73.0,65.0,6.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,KOTA,SWM,9.0,108.0,73.0,15.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,SWM,GGC,15.0,63.0,65.0,12.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,GGC,HAN,15.0,44.0,33.0,13.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,HAN,BXN,13.0,33.0,28.0,15.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,BXN,BTE,16.0,42.0,48.0,-8.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,BTE,MTJ,11.0,34.0,80.0,-10.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,MTJ,FDB,0.0,112.0,107.0,19.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,FDB,NZM,21.0,21.0,30.0,20.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,NZM,NDLS,23.0,7.0,44.0,0.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,NDLS,SZM,1.0,4.0,14.0,2.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,SZM,SNP,2.0,41.0,27.0,2.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,SNP,PNP,4.0,45.0,30.0,19.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,PNP,KUN,20.0,34.0,22.0,18.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,KUN,KKDE,18.0,33.0,23.0,17.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,KKDE,UMB,17.0,42.0,79.0,-30.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,UMB,CDG,1.0,67.0,43.0,0.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,CDG,SASN,0.0,11.0,10.0,24.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,SASN,LDH,26.0,102.0,115.0,0.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,LDH,PGW,6.0,35.0,29.0,8.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,PGW,JRC,8.0,17.0,17.0,5.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,JRC,JUC,5.0,4.0,10.0,3.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,JUC,BEAS,7.0,37.0,31.0,3.0
+12925,Paschim Express,2026-09-15,Tuesday,Bandra Terminus,Amritsar Jn,BEAS,ASR,7.0,42.0,45.0,-4.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,BDTS,BVI,7.0,19.0,23.0,8.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,BVI,DRD,11.0,90.0,73.0,4.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,DRD,VAPI,5.0,50.0,28.0,19.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,VAPI,BL,22.0,24.0,22.0,32.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,BL,NVS,32.0,40.0,38.0,16.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,NVS,ST,18.0,29.0,62.0,-9.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,ST,BH,0.0,59.0,46.0,17.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,BH,BRC,23.0,70.0,60.0,9.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,BRC,GDA,13.0,74.0,73.0,4.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,GDA,DHD,6.0,74.0,50.0,7.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,DHD,MGN,8.0,33.0,25.0,8.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,MGN,RTM,10.0,80.0,76.0,4.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,RTM,KUH,7.0,28.0,29.0,4.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,KUH,NAD,5.0,14.0,39.0,-16.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,NAD,SGZ,0.0,91.0,53.0,6.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,SGZ,RMA,6.0,61.0,38.0,7.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,RMA,KOTA,7.0,73.0,65.0,-5.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,KOTA,SWM,0.0,108.0,73.0,4.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,SWM,GGC,4.0,63.0,65.0,12.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,GGC,HAN,12.0,44.0,33.0,9.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,HAN,BXN,11.0,33.0,28.0,9.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,BXN,BTE,11.0,42.0,48.0,11.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,BTE,MTJ,11.0,34.0,80.0,-41.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,MTJ,FDB,0.0,112.0,107.0,29.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,FDB,NZM,31.0,21.0,30.0,23.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,NZM,NDLS,29.0,7.0,44.0,37.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,NDLS,SZM,41.0,4.0,14.0,60.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,SZM,SNP,62.0,41.0,27.0,62.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,SNP,PNP,63.0,45.0,30.0,75.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,PNP,KUN,79.0,34.0,22.0,77.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,KUN,KKDE,77.0,33.0,23.0,76.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,KKDE,UMB,78.0,42.0,79.0,30.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,UMB,CDG,30.0,67.0,43.0,29.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,CDG,SASN,31.0,11.0,10.0,31.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,SASN,LDH,34.0,102.0,115.0,10.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,LDH,PGW,10.0,35.0,29.0,14.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,PGW,JRC,17.0,17.0,17.0,13.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,JRC,JUC,13.0,4.0,10.0,11.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,JUC,BEAS,12.0,37.0,31.0,4.0
+12925,Paschim Express,2026-09-16,Wednesday,Bandra Terminus,Amritsar Jn,BEAS,ASR,8.0,42.0,45.0,11.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,ASR,BEAS,6.0,43.0,28.0,8.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,BEAS,JUC,8.0,36.0,37.0,2.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,JUC,JRC,2.0,5.0,8.0,2.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,JRC,PGW,3.0,16.0,12.0,5.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,PGW,LDH,5.0,36.0,34.0,-2.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,LDH,SASN,10.0,101.0,121.0,73.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,SASN,CDG,75.0,11.0,27.0,59.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,CDG,UMB,59.0,68.0,40.0,94.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,UMB,KKDE,94.0,41.0,29.0,97.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,KKDE,KUN,97.0,33.0,23.0,99.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,KUN,PNP,101.0,35.0,22.0,111.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,PNP,SNP,111.0,45.0,28.0,128.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,SNP,SZM,130.0,40.0,29.0,170.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,SZM,NDLS,210.0,4.0,49.0,194.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,NDLS,FDB,195.0,28.0,27.0,213.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,FDB,MTJ,214.0,113.0,126.0,189.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,MTJ,BTE,204.0,33.0,23.0,203.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,BTE,BXN,204.0,42.0,33.0,200.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,BXN,HAN,200.0,33.0,23.0,197.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,HAN,GGC,214.0,44.0,30.0,225.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,GGC,SWM,225.0,64.0,43.0,231.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,SWM,KOTA,231.0,108.0,90.0,201.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,KOTA,RMA,204.0,72.0,53.0,201.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,RMA,SGZ,203.0,61.0,48.0,196.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,SGZ,NAD,196.0,92.0,133.0,117.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,NAD,KUH,123.0,13.0,13.0,120.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,KUH,RTM,125.0,28.0,30.0,116.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,RTM,MGN,121.0,80.0,63.0,118.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,MGN,DHD,118.0,33.0,24.0,117.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,DHD,GDA,119.0,75.0,69.0,99.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,GDA,BRC,99.0,74.0,60.0,110.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,BRC,BH,130.0,70.0,53.0,122.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,BH,ST,125.0,59.0,67.0,111.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,ST,NVS,114.0,29.0,19.0,114.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,NVS,BL,114.0,39.0,33.0,111.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,BL,VAPI,113.0,24.0,18.0,119.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,VAPI,DRD,122.0,51.0,28.0,131.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,DRD,BVI,132.0,89.0,78.0,122.0
+12926,Paschim Express,2026-09-11,Friday,Amritsar Jn,Bandra Terminus,BVI,BDTS,124.0,19.0,60.0,86.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,ASR,BEAS,0.0,43.0,28.0,-20.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,BEAS,JUC,0.0,36.0,37.0,13.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,JUC,JRC,13.0,5.0,8.0,10.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,JRC,PGW,10.0,16.0,12.0,13.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,PGW,LDH,13.0,36.0,34.0,12.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,LDH,SASN,15.0,101.0,121.0,-24.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,SASN,CDG,2.0,11.0,27.0,-13.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,CDG,UMB,0.0,68.0,40.0,2.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,UMB,KKDE,2.0,41.0,29.0,6.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,KKDE,KUN,6.0,33.0,23.0,7.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,KUN,PNP,9.0,35.0,22.0,11.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,PNP,SNP,12.0,45.0,28.0,19.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,SNP,SZM,21.0,40.0,29.0,46.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,SZM,NDLS,49.0,4.0,49.0,18.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,NDLS,FDB,23.0,28.0,27.0,48.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,FDB,MTJ,50.0,113.0,126.0,-3.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,MTJ,BTE,13.0,33.0,23.0,14.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,BTE,BXN,14.0,42.0,33.0,9.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,BXN,HAN,9.0,33.0,23.0,10.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,HAN,GGC,12.0,44.0,30.0,16.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,GGC,SWM,16.0,64.0,43.0,12.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,SWM,KOTA,12.0,108.0,90.0,-9.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,KOTA,RMA,0.0,72.0,53.0,4.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,RMA,SGZ,4.0,61.0,48.0,0.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,SGZ,NAD,0.0,92.0,133.0,-18.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,NAD,KUH,0.0,13.0,13.0,0.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,KUH,RTM,0.0,28.0,30.0,-5.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,RTM,MGN,4.0,80.0,63.0,2.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,MGN,DHD,2.0,33.0,24.0,1.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,DHD,GDA,2.0,75.0,69.0,-12.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,GDA,BRC,0.0,74.0,60.0,8.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,BRC,BH,14.0,70.0,53.0,6.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,BH,ST,6.0,59.0,67.0,-17.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,ST,NVS,0.0,29.0,19.0,6.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,NVS,BL,7.0,39.0,33.0,6.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,BL,VAPI,8.0,24.0,18.0,7.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,VAPI,DRD,9.0,51.0,28.0,15.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,DRD,BVI,15.0,89.0,78.0,10.0
+12926,Paschim Express,2026-09-12,Saturday,Amritsar Jn,Bandra Terminus,BVI,BDTS,15.0,19.0,60.0,-11.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,ASR,BEAS,10.0,43.0,28.0,8.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,BEAS,JUC,8.0,36.0,37.0,3.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,JUC,JRC,8.0,5.0,8.0,12.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,JRC,PGW,12.0,16.0,12.0,13.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,PGW,LDH,15.0,36.0,34.0,11.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,LDH,SASN,12.0,101.0,121.0,0.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,SASN,CDG,0.0,11.0,27.0,-12.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,CDG,UMB,0.0,68.0,40.0,7.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,UMB,KKDE,7.0,41.0,29.0,8.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,KKDE,KUN,9.0,33.0,23.0,9.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,KUN,PNP,9.0,35.0,22.0,25.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,PNP,SNP,25.0,45.0,28.0,30.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,SNP,SZM,31.0,40.0,29.0,31.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,SZM,NDLS,32.0,4.0,49.0,1.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,NDLS,FDB,8.0,28.0,27.0,52.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,FDB,MTJ,54.0,113.0,126.0,33.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,MTJ,BTE,35.0,33.0,23.0,44.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,BTE,BXN,44.0,42.0,33.0,42.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,BXN,HAN,42.0,33.0,23.0,40.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,HAN,GGC,59.0,44.0,30.0,65.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,GGC,SWM,65.0,64.0,43.0,67.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,SWM,KOTA,67.0,108.0,90.0,38.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,KOTA,RMA,38.0,72.0,53.0,43.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,RMA,SGZ,43.0,61.0,48.0,47.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,SGZ,NAD,47.0,92.0,133.0,-13.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,NAD,KUH,0.0,13.0,13.0,3.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,KUH,RTM,4.0,28.0,30.0,9.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,RTM,MGN,9.0,80.0,63.0,12.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,MGN,DHD,13.0,33.0,24.0,14.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,DHD,GDA,14.0,75.0,69.0,-2.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,GDA,BRC,0.0,74.0,60.0,6.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,BRC,BH,7.0,70.0,53.0,9.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,BH,ST,11.0,59.0,67.0,-1.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,ST,NVS,5.0,29.0,19.0,4.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,NVS,BL,5.0,39.0,33.0,8.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,BL,VAPI,8.0,24.0,18.0,11.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,VAPI,DRD,13.0,51.0,28.0,18.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,DRD,BVI,18.0,89.0,78.0,22.0
+12926,Paschim Express,2026-09-13,Sunday,Amritsar Jn,Bandra Terminus,BVI,BDTS,26.0,19.0,60.0,-8.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,ASR,BEAS,13.0,43.0,28.0,13.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,BEAS,JUC,13.0,36.0,37.0,2.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,JUC,JRC,2.0,5.0,8.0,7.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,JRC,PGW,7.0,16.0,12.0,5.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,PGW,LDH,6.0,36.0,34.0,0.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,LDH,SASN,2.0,101.0,121.0,-25.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,SASN,CDG,2.0,11.0,27.0,-12.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,CDG,UMB,0.0,68.0,40.0,3.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,UMB,KKDE,3.0,41.0,29.0,3.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,KKDE,KUN,3.0,33.0,23.0,6.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,KUN,PNP,7.0,35.0,22.0,11.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,PNP,SNP,11.0,45.0,28.0,15.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,SNP,SZM,17.0,40.0,29.0,16.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,SZM,NDLS,19.0,4.0,49.0,-5.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,NDLS,FDB,4.0,28.0,27.0,54.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,FDB,MTJ,54.0,113.0,126.0,6.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,MTJ,BTE,14.0,33.0,23.0,16.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,BTE,BXN,17.0,42.0,33.0,15.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,BXN,HAN,17.0,33.0,23.0,14.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,HAN,GGC,14.0,44.0,30.0,18.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,GGC,SWM,20.0,64.0,43.0,16.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,SWM,KOTA,24.0,108.0,90.0,0.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,KOTA,RMA,0.0,72.0,53.0,3.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,RMA,SGZ,4.0,61.0,48.0,-2.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,SGZ,NAD,16.0,92.0,133.0,-12.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,NAD,KUH,2.0,13.0,13.0,2.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,KUH,RTM,2.0,28.0,30.0,-5.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,RTM,MGN,6.0,80.0,63.0,6.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,MGN,DHD,8.0,33.0,24.0,6.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,DHD,GDA,6.0,75.0,69.0,-7.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,GDA,BRC,0.0,74.0,60.0,-2.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,BRC,BH,0.0,70.0,53.0,12.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,BH,ST,12.0,59.0,67.0,5.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,ST,NVS,15.0,29.0,19.0,15.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,NVS,BL,16.0,39.0,33.0,14.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,BL,VAPI,14.0,24.0,18.0,26.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,VAPI,DRD,26.0,51.0,28.0,35.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,DRD,BVI,35.0,89.0,78.0,35.0
+12926,Paschim Express,2026-09-14,Monday,Amritsar Jn,Bandra Terminus,BVI,BDTS,37.0,19.0,60.0,-2.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,ASR,BEAS,10.0,43.0,28.0,6.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,BEAS,JUC,11.0,36.0,37.0,3.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,JUC,JRC,3.0,5.0,8.0,5.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,JRC,PGW,5.0,16.0,12.0,6.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,PGW,LDH,6.0,36.0,34.0,0.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,LDH,SASN,3.0,101.0,121.0,-37.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,SASN,CDG,0.0,11.0,27.0,-13.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,CDG,UMB,0.0,68.0,40.0,1.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,UMB,KKDE,1.0,41.0,29.0,5.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,KKDE,KUN,7.0,33.0,23.0,4.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,KUN,PNP,5.0,35.0,22.0,9.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,PNP,SNP,9.0,45.0,28.0,10.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,SNP,SZM,12.0,40.0,29.0,14.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,SZM,NDLS,19.0,4.0,49.0,-9.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,NDLS,FDB,2.0,28.0,27.0,8.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,FDB,MTJ,8.0,113.0,126.0,-6.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,MTJ,BTE,2.0,33.0,23.0,5.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,BTE,BXN,6.0,42.0,33.0,4.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,BXN,HAN,4.0,33.0,23.0,0.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,HAN,GGC,4.0,44.0,30.0,14.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,GGC,SWM,14.0,64.0,43.0,9.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,SWM,KOTA,9.0,108.0,90.0,-4.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,KOTA,RMA,29.0,72.0,53.0,25.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,RMA,SGZ,27.0,61.0,48.0,24.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,SGZ,NAD,26.0,92.0,133.0,-11.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,NAD,KUH,0.0,13.0,13.0,-2.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,KUH,RTM,0.0,28.0,30.0,0.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,RTM,MGN,0.0,80.0,63.0,4.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,MGN,DHD,7.0,33.0,24.0,3.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,DHD,GDA,5.0,75.0,69.0,-8.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,GDA,BRC,1.0,74.0,60.0,1.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,BRC,BH,20.0,70.0,53.0,16.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,BH,ST,16.0,59.0,67.0,-2.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,ST,NVS,0.0,29.0,19.0,-1.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,NVS,BL,0.0,39.0,33.0,-3.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,BL,VAPI,0.0,24.0,18.0,-1.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,VAPI,DRD,1.0,51.0,28.0,10.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,DRD,BVI,11.0,89.0,78.0,14.0
+12926,Paschim Express,2026-09-15,Tuesday,Amritsar Jn,Bandra Terminus,BVI,BDTS,17.0,19.0,60.0,-10.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,ASR,BEAS,8.0,43.0,28.0,6.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,BEAS,JUC,6.0,36.0,37.0,6.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,JUC,JRC,6.0,5.0,8.0,6.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,JRC,PGW,6.0,16.0,12.0,4.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,PGW,LDH,4.0,36.0,34.0,-1.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,LDH,SASN,6.0,101.0,121.0,-17.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,SASN,CDG,0.0,11.0,27.0,-14.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,CDG,UMB,0.0,68.0,40.0,4.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,UMB,KKDE,4.0,41.0,29.0,11.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,KKDE,KUN,12.0,33.0,23.0,11.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,KUN,PNP,12.0,35.0,22.0,18.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,PNP,SNP,18.0,45.0,28.0,17.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,SNP,SZM,17.0,40.0,29.0,18.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,SZM,NDLS,19.0,4.0,49.0,-9.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,NDLS,FDB,0.0,28.0,27.0,11.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,FDB,MTJ,44.0,113.0,126.0,-1.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,MTJ,BTE,2.0,33.0,23.0,4.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,BTE,BXN,6.0,42.0,33.0,9.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,BXN,HAN,9.0,33.0,23.0,5.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,HAN,GGC,8.0,44.0,30.0,13.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,GGC,SWM,14.0,64.0,43.0,13.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,SWM,KOTA,17.0,108.0,90.0,-4.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,KOTA,RMA,0.0,72.0,53.0,48.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,RMA,SGZ,48.0,61.0,48.0,43.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,SGZ,NAD,44.0,92.0,133.0,-11.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,NAD,KUH,6.0,13.0,13.0,7.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,KUH,RTM,7.0,28.0,30.0,-3.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,RTM,MGN,2.0,80.0,63.0,0.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,MGN,DHD,1.0,33.0,24.0,-2.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,DHD,GDA,0.0,75.0,69.0,-16.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,GDA,BRC,0.0,74.0,60.0,-8.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,BRC,BH,2.0,70.0,53.0,9.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,BH,ST,9.0,59.0,67.0,-3.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,ST,NVS,1.0,29.0,19.0,0.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,NVS,BL,1.0,39.0,33.0,0.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,BL,VAPI,2.0,24.0,18.0,0.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,VAPI,DRD,2.0,51.0,28.0,7.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,DRD,BVI,8.0,89.0,78.0,2.0
+12926,Paschim Express,2026-09-16,Wednesday,Amritsar Jn,Bandra Terminus,BVI,BDTS,5.0,19.0,60.0,-22.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,DLI,GZB,278.0,20.0,38.0,264.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,GZB,MDNR,264.0,28.0,24.0,342.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,MDNR,MTC,343.0,20.0,17.0,352.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,MTC,MUT,353.0,4.0,6.0,358.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,MUT,SKF,358.0,20.0,16.0,359.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,SKF,MOZ,359.0,31.0,22.0,370.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,MOZ,DBD,370.0,24.0,18.0,370.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,DBD,SRE,372.0,34.0,75.0,331.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,SRE,YJUD,331.0,30.0,26.0,347.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,YJUD,JUDW,347.0,5.0,6.0,348.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,JUDW,MFB,348.0,13.0,11.0,349.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,MFB,RAA,350.0,9.0,8.0,351.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,RAA,UMB,351.0,24.0,44.0,336.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,UMB,UBC,336.0,8.0,10.0,335.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,UBC,RPJ,336.0,20.0,15.0,339.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,RPJ,SIR,339.0,26.0,17.0,345.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,SIR,KNN,348.0,18.0,12.0,358.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,KNN,LDH,358.0,42.0,49.0,339.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,LDH,PHR,340.0,13.0,14.0,344.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,PHR,PGW,344.0,23.0,18.0,359.0
+14681,Dli Juc Express,2026-09-11,Friday,Old Delhi,Jalandhar City,PGW,JUC,359.0,21.0,44.0,342.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,DLI,GZB,21.0,20.0,38.0,64.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,GZB,MDNR,64.0,28.0,24.0,78.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,MDNR,MTC,78.0,20.0,17.0,79.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,MTC,MUT,80.0,4.0,6.0,83.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,MUT,SKF,83.0,20.0,16.0,86.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,SKF,MOZ,86.0,31.0,22.0,92.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,MOZ,DBD,93.0,24.0,18.0,93.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,DBD,SRE,94.0,34.0,75.0,47.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,SRE,YJUD,47.0,30.0,26.0,49.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,YJUD,JUDW,49.0,5.0,6.0,51.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,JUDW,MFB,51.0,13.0,11.0,53.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,MFB,RAA,53.0,9.0,8.0,55.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,RAA,UMB,55.0,24.0,44.0,56.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,UMB,UBC,69.0,8.0,10.0,71.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,UBC,RPJ,71.0,20.0,15.0,74.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,RPJ,SIR,74.0,26.0,17.0,71.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,SIR,KNN,74.0,18.0,12.0,77.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,KNN,LDH,77.0,42.0,49.0,109.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,LDH,PHR,114.0,13.0,14.0,126.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,PHR,PGW,126.0,23.0,18.0,142.0
+14681,Dli Juc Express,2026-09-12,Saturday,Old Delhi,Jalandhar City,PGW,JUC,142.0,21.0,44.0,119.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,DLI,GZB,34.0,20.0,38.0,34.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,GZB,MDNR,46.0,28.0,24.0,66.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,MDNR,MTC,67.0,20.0,17.0,88.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,MTC,MUT,88.0,4.0,6.0,86.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,MUT,SKF,86.0,20.0,16.0,78.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,SKF,MOZ,78.0,31.0,22.0,78.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,MOZ,DBD,103.0,24.0,18.0,106.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,DBD,SRE,106.0,34.0,75.0,88.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,SRE,YJUD,92.0,30.0,26.0,100.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,YJUD,JUDW,100.0,5.0,6.0,100.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,JUDW,MFB,100.0,13.0,11.0,101.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,MFB,RAA,101.0,9.0,8.0,101.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,RAA,UMB,102.0,24.0,44.0,80.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,UMB,UBC,99.0,8.0,10.0,104.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,UBC,RPJ,104.0,20.0,15.0,107.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,RPJ,SIR,107.0,26.0,17.0,110.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,SIR,KNN,110.0,18.0,12.0,114.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,KNN,LDH,114.0,42.0,49.0,126.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,LDH,PHR,129.0,13.0,14.0,138.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,PHR,PGW,143.0,23.0,18.0,145.0
+14681,Dli Juc Express,2026-09-13,Sunday,Old Delhi,Jalandhar City,PGW,JUC,147.0,21.0,44.0,126.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,DLI,GZB,7.0,20.0,38.0,6.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,GZB,MDNR,11.0,28.0,24.0,23.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,MDNR,MTC,23.0,20.0,17.0,33.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,MTC,MUT,33.0,4.0,6.0,37.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,MUT,SKF,37.0,20.0,16.0,36.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,SKF,MOZ,36.0,31.0,22.0,42.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,MOZ,DBD,42.0,24.0,18.0,43.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,DBD,SRE,43.0,34.0,75.0,-6.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,SRE,YJUD,0.0,30.0,26.0,5.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,YJUD,JUDW,5.0,5.0,6.0,6.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,JUDW,MFB,6.0,13.0,11.0,6.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,MFB,RAA,6.0,9.0,8.0,8.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,RAA,UMB,8.0,24.0,44.0,13.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,UMB,UBC,13.0,8.0,10.0,16.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,UBC,RPJ,16.0,20.0,15.0,19.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,RPJ,SIR,19.0,26.0,17.0,19.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,SIR,KNN,19.0,18.0,12.0,21.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,KNN,LDH,21.0,42.0,49.0,17.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,LDH,PHR,17.0,13.0,14.0,11.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,PHR,PGW,11.0,23.0,18.0,4.0
+14681,Dli Juc Express,2026-09-14,Monday,Old Delhi,Jalandhar City,PGW,JUC,4.0,21.0,44.0,-2.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,DLI,GZB,116.0,20.0,38.0,128.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,GZB,MDNR,128.0,28.0,24.0,140.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,MDNR,MTC,140.0,20.0,17.0,142.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,MTC,MUT,142.0,4.0,6.0,147.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,MUT,SKF,147.0,20.0,16.0,148.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,SKF,MOZ,148.0,31.0,22.0,152.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,MOZ,DBD,153.0,24.0,18.0,176.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,DBD,SRE,176.0,34.0,75.0,140.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,SRE,YJUD,141.0,30.0,26.0,141.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,YJUD,JUDW,141.0,5.0,6.0,141.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,JUDW,MFB,141.0,13.0,11.0,146.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,MFB,RAA,146.0,9.0,8.0,139.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,RAA,UMB,139.0,24.0,44.0,123.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,UMB,UBC,123.0,8.0,10.0,132.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,UBC,RPJ,132.0,20.0,15.0,137.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,RPJ,SIR,137.0,26.0,17.0,144.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,SIR,KNN,149.0,18.0,12.0,154.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,KNN,LDH,154.0,42.0,49.0,146.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,LDH,PHR,150.0,13.0,14.0,163.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,PHR,PGW,163.0,23.0,18.0,161.0
+14681,Dli Juc Express,2026-09-15,Tuesday,Old Delhi,Jalandhar City,PGW,JUC,161.0,21.0,44.0,142.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,DLI,GZB,0.0,20.0,38.0,3.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,GZB,MDNR,4.0,28.0,24.0,22.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,MDNR,MTC,21.0,20.0,17.0,28.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,MTC,MUT,29.0,4.0,6.0,33.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,MUT,SKF,32.0,20.0,16.0,33.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,SKF,MOZ,33.0,31.0,22.0,39.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,MOZ,DBD,39.0,24.0,18.0,40.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,DBD,SRE,40.0,34.0,75.0,-7.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,SRE,YJUD,1.0,30.0,26.0,1.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,YJUD,JUDW,2.0,5.0,6.0,4.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,JUDW,MFB,3.0,13.0,11.0,4.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,MFB,RAA,4.0,9.0,8.0,6.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,RAA,UMB,5.0,24.0,44.0,-5.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,UMB,UBC,0.0,8.0,10.0,3.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,UBC,RPJ,3.0,20.0,15.0,5.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,RPJ,SIR,4.0,26.0,17.0,7.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,SIR,KNN,6.0,18.0,12.0,9.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,KNN,LDH,10.0,42.0,49.0,-6.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,LDH,PHR,0.0,13.0,14.0,8.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,PHR,PGW,8.0,23.0,18.0,7.0
+14681,Dli Juc Express,2026-09-16,Wednesday,Old Delhi,Jalandhar City,PGW,JUC,6.0,21.0,44.0,-10.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,DLI,GZB,116.0,20.0,38.0,117.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,GZB,MDNR,117.0,28.0,24.0,131.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,MDNR,MTC,131.0,20.0,17.0,139.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,MTC,MUT,139.0,4.0,6.0,145.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,MUT,SKF,145.0,20.0,16.0,148.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,SKF,MOZ,148.0,31.0,22.0,154.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,MOZ,DBD,154.0,24.0,18.0,159.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,DBD,SRE,159.0,34.0,75.0,125.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,SRE,YJUD,125.0,30.0,26.0,123.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,YJUD,JUDW,123.0,5.0,6.0,124.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,JUDW,MFB,124.0,13.0,11.0,123.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,MFB,RAA,123.0,9.0,8.0,125.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,RAA,UMB,126.0,24.0,44.0,105.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,UMB,UBC,106.0,8.0,10.0,107.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,UBC,RPJ,108.0,20.0,15.0,111.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,RPJ,SIR,111.0,26.0,17.0,113.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,SIR,KNN,114.0,18.0,12.0,117.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,KNN,LDH,117.0,42.0,49.0,99.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,LDH,PHR,106.0,13.0,14.0,111.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,PHR,PGW,111.0,23.0,18.0,109.0
+14681,Dli Juc Express,2026-09-17,Thursday,Old Delhi,Jalandhar City,PGW,JUC,109.0,21.0,44.0,103.0
