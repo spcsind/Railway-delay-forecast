@@ -1,7 +1,7 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 
 from app.schemas.train import TrainResponse, TrainStatus
-
+from app.websocket.manager import connection_manager
 
 router = APIRouter(
     prefix="/trains",
@@ -69,3 +69,27 @@ def get_train(train_number: str):
         )
 
     return train
+
+@router.websocket("/ws/{train_number}")
+async def train_websocket(
+    websocket: WebSocket,
+    train_number: str,
+):
+    if train_number not in TRAIN_DATA:
+        await websocket.close(code=1008)
+        return
+
+    await connection_manager.connect(
+        train_number,
+        websocket,
+    )
+
+    try:
+        while True:
+            await websocket.receive_text()
+
+    except WebSocketDisconnect:
+        connection_manager.disconnect(
+            train_number,
+            websocket,
+        )
