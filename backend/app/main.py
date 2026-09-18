@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.api.trains import router as train_router
+from app.api.health import router as health_router
 
 
 app = FastAPI(
@@ -10,17 +11,11 @@ app = FastAPI(
 
 
 app.include_router(train_router)
+app.include_router(health_router)
 
 
 @app.get("/")
 def root():
     return {
         "message": "Dynamic Train ETA API is running"
-    }
-
-
-@app.get("/health")
-def health_check():
-    return {
-        "status": "healthy"
     }
