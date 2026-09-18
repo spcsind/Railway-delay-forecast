@@ -5,11 +5,17 @@ import {
   Popup,
   Polyline,
 } from "react-leaflet";
-
+import {
+  useEffect,
+  useState,
+} from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-// Fix Leaflet marker icons in Vite
+// ================================
+// Train Marker
+// ================================
+
 const trainIcon = L.divIcon({
   className: "train-marker",
   html: "🚆",
@@ -17,12 +23,20 @@ const trainIcon = L.divIcon({
   iconAnchor: [17, 17],
 });
 
+// ================================
+// Station Marker
+// ================================
+
 const stationIcon = L.divIcon({
   className: "station-marker",
   html: "●",
   iconSize: [20, 20],
   iconAnchor: [10, 10],
 });
+
+// ================================
+// Train Map
+// ================================
 
 function TrainMap({ train }) {
 
@@ -55,22 +69,198 @@ function TrainMap({ train }) {
     },
   ];
 
+  // ================================
+  // Find Current Station
+  // ================================
+
+  const currentIndex = stations.findIndex(
+    (station) =>
+      station.name === train.currentStation
+  );
+
+  // ================================
+  // Find Next Station
+  // ================================
+
+  const nextIndex = stations.findIndex(
+    (station) =>
+      station.name === train.nextStation
+  );
+
+  // ================================
+  // Calculate Train Position
+  // ================================
+
+  let trainPosition = null;
+
+  if (
+    currentIndex !== -1 &&
+    nextIndex !== -1
+  ) {
+    const currentPosition =
+      stations[currentIndex].position;
+
+    const nextPosition =
+      stations[nextIndex].position;
+
+    // Temporary simulated progress
+    // 0 = current station
+    // 1 = next station
+    const progress = 0.5;
+
+    trainPosition = [
+      currentPosition[0] +
+        (nextPosition[0] -
+          currentPosition[0]) *
+          progress,
+
+      currentPosition[1] +
+        (nextPosition[1] -
+          currentPosition[1]) *
+          progress,
+    ];
+  }
+
+  // ================================
+  // Complete Route
+  // ================================
+
   const routeCoordinates = stations.map(
     (station) => station.position
   );
+
+  // ================================
+  // Current Station
+  // ================================
 
   const currentStation = stations.find(
     (station) =>
       station.name === train.currentStation
   );
 
+  // ================================
+  // Next Station
+  // ================================
+
   const nextStation = stations.find(
     (station) =>
       station.name === train.nextStation
   );
 
+  // ================================
+  // UI
+  // ================================
+
   return (
     <div className="map-wrapper">
+
+      {/* ================================
+          Map Status Overlay
+      ================================= */}
+
+      <div className="map-status-overlay">
+
+        <div className="map-status-header">
+
+          <div>
+            <span>LIVE TRAIN</span>
+
+            <strong>
+              {train.number} {train.name}
+            </strong>
+          </div>
+
+          <div className="map-live-indicator">
+
+            <span></span>
+
+            LIVE
+
+          </div>
+
+        </div>
+
+        {/* Current → Next */}
+
+        <div className="map-status-route">
+
+          <div>
+
+            <small>
+              CURRENT
+            </small>
+
+            <strong>
+              {train.currentStation}
+            </strong>
+
+          </div>
+
+          <div className="map-route-arrow">
+            →
+          </div>
+
+          <div>
+
+            <small>
+              NEXT
+            </small>
+
+            <strong>
+              {train.nextStation}
+            </strong>
+
+          </div>
+
+        </div>
+
+        {/* Train Statistics */}
+
+        <div className="map-status-stats">
+
+          <div>
+
+            <small>
+              Speed
+            </small>
+
+            <strong>
+              {train.speed} km/h
+            </strong>
+
+          </div>
+
+          <div>
+
+            <small>
+              Current Delay
+            </small>
+
+            <strong>
+              +{train.delay} min
+            </strong>
+
+          </div>
+
+          <div>
+
+            <small>
+              Predicted Delay
+            </small>
+
+            <strong>
+              +{train.prediction} min
+            </strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* ================================
+          Leaflet Map
+      ================================= */}
 
       <MapContainer
         center={[31.1, 75.7]}
@@ -80,16 +270,45 @@ function TrainMap({ train }) {
       >
 
         <TileLayer
-          attribution='&copy; OpenStreetMap contributors'
+          attribution="&copy; OpenStreetMap contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        {/* Railway Route */}
-        <Polyline
-          positions={routeCoordinates}
-        />
+       
+        {/* ================================
+    Complete Railway Route
+================================ */}
 
-        {/* Stations */}
+<Polyline
+  positions={routeCoordinates}
+  pathOptions={{
+    color: "#9ca3af",
+    weight: 4,
+    opacity: 0.6,
+  }}
+/>
+
+{/* ================================
+    Active Train Section
+================================ */}
+
+{currentIndex !== -1 && nextIndex !== -1 && (
+  <Polyline
+    positions={[
+      stations[currentIndex].position,
+      stations[nextIndex].position,
+    ]}
+    pathOptions={{
+      color: "#2563eb",
+      weight: 7,
+      opacity: 0.9,
+    }}
+  />
+)}
+        {/* ================================
+            Stations
+        ================================= */}
+
         {stations.map((station) => (
 
           <Marker
@@ -114,11 +333,17 @@ function TrainMap({ train }) {
 
         ))}
 
-        {/* Current Train */}
+        {/* ================================
+            Current Train
+        ================================= */}
+
         {currentStation && (
 
           <Marker
-            position={currentStation.position}
+            position={
+              trainPosition ||
+              currentStation.position
+            }
             icon={trainIcon}
           >
 
@@ -136,15 +361,27 @@ function TrainMap({ train }) {
 
               <br />
 
+              Next Station:
+              {" "}
+              {train.nextStation}
+
+              <br />
+
               Speed:
               {" "}
               {train.speed} km/h
 
               <br />
 
-              Delay:
+              Current Delay:
               {" "}
               +{train.delay} min
+
+              <br />
+
+              Predicted Delay:
+              {" "}
+              +{train.prediction} min
 
             </Popup>
 
@@ -152,7 +389,10 @@ function TrainMap({ train }) {
 
         )}
 
-        {/* Next Station */}
+        {/* ================================
+            Next Station
+        ================================= */}
+
         {nextStation && (
 
           <Marker

@@ -1,7 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import TrainMap from "./components/TrainMap";
-
+import Train3D from "./components/Train3D";
 const trains = [
   {
     number: "12345",
@@ -225,56 +225,45 @@ function App() {
 
   {/* Route Progress */}
   <div className="route-progress">
+  {selectedTrain.route.map((station, index) => {
+    const isCurrent = station.name === selectedTrain.currentStation;
+    const isNext = station.name === selectedTrain.nextStation;
 
-    {/* Current Station */}
-    <div className="route-stop current">
+    return (
+      <React.Fragment key={station.code}>
+        <div
+          className={`route-stop ${
+            isCurrent ? "current" : isNext ? "next" : ""
+          }`}
+        >
+          <div className="stop-marker">
+            {isCurrent ? "🚆" : isNext ? "●" : "○"}
+          </div>
 
-      <div className="stop-marker">
-        🚆
-      </div>
+          <div className="stop-info">
+            <span className="station-code">
+              {station.code}
+            </span>
 
-      <div className="stop-info">
-        <span className="station-code">
-          {selectedTrain.currentCode}
-        </span>
+            <strong>{station.name}</strong>
 
-        <strong>
-          {selectedTrain.currentStation}
-        </strong>
+            <span className="station-delay">
+              +{station.delay} min
+            </span>
+          </div>
+        </div>
 
-        <small>
-          Current Location
-        </small>
-      </div>
-
-    </div>
-
-    <div className="route-connector"></div>
-
-    {/* Next Station */}
-    <div className="route-stop next">
-
-      <div className="stop-marker">
-        ●
-      </div>
-
-      <div className="stop-info">
-        <span className="station-code">
-          {selectedTrain.nextCode}
-        </span>
-
-        <strong>
-          {selectedTrain.nextStation}
-        </strong>
-
-        <small>
-          Next Station
-        </small>
-      </div>
-
-    </div>
-
-  </div>
+        {index < selectedTrain.route.length - 1 && (
+          <div
+            className={`route-connector ${
+              index === 0 ? "active" : ""
+            }`}
+          ></div>
+        )}
+      </React.Fragment>
+    );
+  })}
+</div>
 
 </section>
         {/* Statistics */}
@@ -288,8 +277,8 @@ function App() {
             </strong>
 
             <small>
-              Current train status
-            </small>
+  Current operational delay
+</small>
           </div>
 
           <div className="stat-card">
@@ -300,8 +289,8 @@ function App() {
             </strong>
 
             <small>
-              ML predicted
-            </small>
+  At {selectedTrain.nextStation}
+</small>
           </div>
 
           <div className="stat-card">
@@ -324,10 +313,25 @@ function App() {
             </strong>
 
             <small>
-              Current speed
-            </small>
+  Current running speed
+</small>
           </div>
+          <div className="stat-card">
+  <span>Delay Change</span>
 
+  <strong>
+    {delayChange >= 0 ? "+" : ""}
+    {delayChange} min
+  </strong>
+
+ <small>
+  {delayChange > 0
+    ? "Delay increasing"
+    : delayChange < 0
+    ? "Delay recovering"
+    : "Delay stable"}
+</small>
+</div>
         </section>
 
         {/* Delay Intelligence */}
@@ -417,6 +421,59 @@ function App() {
           </div>
 
         </section>
+        {/* System Overview */}
+<section className="overview-card">
+
+  <div className="section-title">
+    <div>
+      <span className="label">SYSTEM OVERVIEW</span>
+      <h2>Train Monitoring Summary</h2>
+    </div>
+
+    <span className="prediction-badge">
+      Live Dashboard
+    </span>
+  </div>
+
+  <div className="overview-grid">
+
+    <div className="overview-item">
+      <span className="overview-icon">🚆</span>
+      <div>
+        <strong>{trains.length}</strong>
+        <small>Trains Monitored</small>
+      </div>
+    </div>
+
+    <div className="overview-item">
+      <span className="overview-icon">📍</span>
+      <div>
+        <strong>{selectedTrain.currentStation}</strong>
+        <small>Current Location</small>
+      </div>
+    </div>
+
+    <div className="overview-item">
+      <span className="overview-icon">🎯</span>
+      <div>
+        <strong>{selectedTrain.nextStation}</strong>
+        <small>Next Station</small>
+      </div>
+    </div>
+
+    <div className="overview-item">
+      <span className="overview-icon">📊</span>
+      <div>
+        <strong>
+          {selectedTrain.route.length}
+        </strong>
+        <small>Upcoming Stations</small>
+      </div>
+    </div>
+
+  </div>
+
+</section>
         {/* Delay Propagation */}
 <section className="propagation-card">
 
@@ -462,7 +519,15 @@ function App() {
     </div>
 
     {/* Future Stations */}
-    {selectedTrain.route.map((station) => (
+    {selectedTrain.route.map((station, index) => {
+  const previousDelay =
+    index === 0
+      ? selectedTrain.delay
+      : selectedTrain.route[index - 1].delay;
+
+  const delayChange = station.delay - previousDelay;
+
+  return (
 
       <div
         className="propagation-point"
@@ -484,13 +549,24 @@ function App() {
           {station.name}
         </strong>
 
-        <small>
-          {station.code}
-        </small>
+       <small>
+  {station.code}
+</small>
+
+<span className="propagation-change">
+  {delayChange > 0
+    ? `+${delayChange} min`
+    : delayChange < 0
+    ? `${delayChange} min`
+    : "Stable"}
+</span>
 
       </div>
 
-    ))}
+
+  );
+})}
+
 
   </div>
 
@@ -519,69 +595,95 @@ function App() {
   <TrainMap train={selectedTrain} />
 
 </section>
+<section className="map-card">
+  <h2>3D Railway Visualization</h2>
+  <p>
+    Interactive 3D view of the train and railway track.
+  </p>
+
+  <Train3D />
+</section>
         {/* Upcoming Stations */}
-        <section className="stations-card">
+        <section className="map-card">
+  <div className="section-header">
+    <div>
+      <h2>Upcoming Stations</h2>
+      <p>Predicted arrival and delay across the remaining route.</p>
+    </div>
 
-          <div className="section-title">
+    <span className="prediction-badge">
+      ML Prediction
+    </span>
+  </div>
 
-            <div>
-              <span className="label">
-                ROUTE
-              </span>
+  <div className="table-wrapper">
+    <table className="stations-table">
+      <thead>
+        <tr>
+          <th>Station</th>
+          <th>Scheduled Arrival</th>
+          <th>Predicted Arrival</th>
+          <th>Predicted Delay</th>
+          <th>Delay Change</th>
+        </tr>
+      </thead>
 
-              <h2>
-                Upcoming Stations
-              </h2>
-            </div>
+      <tbody>
+        {selectedTrain.route.map((station, index) => {
+          const previousDelay =
+            index === 0
+              ? selectedTrain.delay
+              : selectedTrain.route[index - 1].delay;
 
-          </div>
+          const delayChange = station.delay - previousDelay;
 
-          <div className="station-table">
-
-            <div className="table-header">
-              <span>Station</span>
-              <span>Scheduled</span>
-              <span>Predicted</span>
-              <span>Delay</span>
-            </div>
-
-            {selectedTrain.route.map((station) => (
-
-              <div
-                className="table-row"
-                key={station.code}
-              >
-
-                <span>
-                  <strong>
-                    {station.name}
-                  </strong>
-
-                  <small>
-                    {station.code}
-                  </small>
+          return (
+            <tr key={station.code}>
+              <td>
+                <strong>{station.name}</strong>
+                <span className="table-code">
+                  {station.code}
                 </span>
+              </td>
 
-                <span>
-                  {station.scheduled}
-                </span>
+              <td>
+  {station.scheduled}
+</td>
 
-                <span>
-                  {station.predicted}
-                </span>
+<td>
+  {station.predicted}
+</td>
 
-                <span className="delay">
+              <td>
+                <span className="delay-value">
                   +{station.delay} min
                 </span>
+              </td>
 
-              </div>
-
-            ))}
-
-          </div>
-
-        </section>
-
+              <td>
+                <span
+                  className={
+                    delayChange > 0
+                      ? "delay-increase"
+                      : delayChange < 0
+                      ? "delay-recovery"
+                      : "delay-stable"
+                  }
+                >
+                  {delayChange > 0
+                    ? `+${delayChange} min`
+                    : delayChange < 0
+                    ? `${delayChange} min`
+                    : "Stable"}
+                </span>
+              </td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+</section>
       </main>
 
       <footer>
