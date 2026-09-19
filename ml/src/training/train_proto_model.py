@@ -4,10 +4,10 @@ from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
-# Load preprocessed data
+
 df = pd.read_csv("training_data_proto.csv")
 
-# Features
+
 X = df[
     [
         "current_delay",
@@ -16,10 +16,10 @@ X = df[
     ]
 ]
 
-# Target
+
 y = df["target_delay"]
 
-# Split data
+
 X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
@@ -27,7 +27,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42
 )
 
-# Create model
+
 model = XGBRegressor(
     n_estimators=200,
     max_depth=3,
@@ -36,13 +36,13 @@ model = XGBRegressor(
     random_state=42
 )
 
-# Train
+
 model.fit(X_train, y_train)
 
-# Predict
+
 predictions = model.predict(X_test)
 
-# Evaluate
+
 mae = mean_absolute_error(y_test, predictions)
 rmse = mean_squared_error(y_test, predictions) ** 0.5
 
@@ -66,7 +66,7 @@ results = pd.DataFrame({
 
 print(results.head(15).to_string(index=False))
 
-# Save model
+
 model.save_model("train_eta_proto.json")
 
 print("\nModel saved as: train_eta_proto.json")

@@ -1,16 +1,13 @@
 import pandas as pd
 
-# Load raw teammate data
 df = pd.read_csv("../SIH2026/Prototype final/teammate_data.csv")
 
-# Sort each journey by route distance
 df = df.sort_values(
     ["train_number", "journey_date", "distance_from_source_km"]
 )
 
 training_rows = []
 
-# Process each individual train journey
 for (train_number, journey_date), journey in df.groupby(
     ["train_number", "journey_date"]
 ):
@@ -20,14 +17,12 @@ for (train_number, journey_date), journey in df.groupby(
         current = journey.iloc[i]
         next_station = journey.iloc[i + 1]
 
-        # We need current departure delay and next arrival delay
         if pd.isna(current["departure_delay_minutes"]):
             continue
 
         if pd.isna(next_station["arrival_delay_minutes"]):
             continue
 
-        # Parse scheduled times
         current_departure = pd.to_datetime(
             current["scheduled_departure"]
         )
@@ -35,12 +30,11 @@ for (train_number, journey_date), journey in df.groupby(
             next_station["scheduled_arrival"]
         )
 
-        # Scheduled travel time between the two stations
         scheduled_travel_minutes = (
             next_arrival - current_departure
         ).total_seconds() / 60
 
-        # Ignore invalid time differences
+
         if scheduled_travel_minutes <= 0:
             continue
 
@@ -69,7 +63,6 @@ for (train_number, journey_date), journey in df.groupby(
         })
 
 
-# Create final training dataset
 training_df = pd.DataFrame(training_rows)
 
 print("\n==============================")

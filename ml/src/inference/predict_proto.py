@@ -1,26 +1,24 @@
 import pandas as pd
 from xgboost import XGBRegressor
 
-# Load trained model
 model = XGBRegressor()
 model.load_model("/Users/rishabhsyal/Uni/SIH2026/Prototype final/train_eta_proto.json")
 
-# Example current train situation
 current_delay = 10
 distance_to_next = 28
 scheduled_travel_minutes = 19
 
-# Create input
+
 input_data = pd.DataFrame([{
     "current_delay": current_delay,
     "distance_to_next": distance_to_next,
     "scheduled_travel_minutes": scheduled_travel_minutes
 }])
 
-# Predict next-station delay
+
 predicted_delay = model.predict(input_data)[0]
 
-# Calculate predicted travel time
+
 predicted_travel_minutes = (
     scheduled_travel_minutes
     + predicted_delay
