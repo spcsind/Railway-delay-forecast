@@ -159,7 +159,12 @@ function App() {
   );
 
   // Backend WebSocket supported trains
-  const liveSupportedTrains = ["12345", "12459"];
+const liveSupportedTrains = [
+  "12345",
+  "12459",
+  "14649",
+  "12925"
+];
 
   const isLiveSupported = liveSupportedTrains.includes(
     selectedTrainNumber

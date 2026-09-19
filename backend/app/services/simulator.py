@@ -6,19 +6,26 @@ from app.services.eta_service import calculate_eta_details
 from app.websocket.manager import connection_manager
 
 
+# Latest state of each simulated train
+latest_train_state = {}
+
+
 async def simulate_train_updates(train_number: str, train_data: dict):
 
     while True:
 
+        # Update current delay
         current_delay = train_data["delay_minutes"] + 1
         train_data["delay_minutes"] = current_delay
 
+        # ML prediction
         predicted_delay = train_prediction_service.predict_future_delay(
             current_delay=current_delay,
             distance_to_next=train_data["distance_to_next"],
             scheduled_travel_minutes=train_data["scheduled_travel_minutes"],
         )
 
+        # ETA calculation
         scheduled_arrival = datetime.fromisoformat(
             train_data["scheduled_arrival"]
         )
@@ -29,6 +36,19 @@ async def simulate_train_updates(train_number: str, train_data: dict):
             predicted_delay_minutes=predicted_delay,
         )
 
+        # Store latest train state
+        latest_train_state[train_number] = {
+            "train_number": train_data["train_number"],
+            "train_name": train_data["train_name"],
+            "current_delay": current_delay,
+            "distance_to_next": train_data["distance_to_next"],
+            "scheduled_travel_minutes": train_data["scheduled_travel_minutes"],
+            "scheduled_arrival": train_data["scheduled_arrival"],
+            "predicted_delay": predicted_delay,
+            "predicted_eta": eta_details["predicted_eta"].isoformat(),
+        }
+
+        # WebSocket message
         message = {
             "train_number": train_data["train_number"],
             "current_delay_minutes": current_delay,
@@ -39,7 +59,7 @@ async def simulate_train_updates(train_number: str, train_data: dict):
 
         await connection_manager.send_to_train(
             train_number,
-            message,
+            message
         )
 
         await asyncio.sleep(30)
