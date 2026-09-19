@@ -3,6 +3,7 @@ import "./App.css";
 import TrainMap from "./components/TrainMap";
 import useTrainWebSocket from "./hooks/useTrainWebSocket";
 import Train3D from "./components/Train3D";
+
 const trains = [
   {
     number: "12345",
@@ -150,40 +151,49 @@ const trains = [
 ];
 
 function App() {
-  const [selectedTrainNumber, setSelectedTrainNumber] = useState("12345");
+  const [selectedTrainNumber, setSelectedTrainNumber] =
+    useState("12345");
 
- const selectedTrain = trains.find(
-  (train) => train.number === selectedTrainNumber
-);
+  const selectedTrain = trains.find(
+    (train) => train.number === selectedTrainNumber
+  );
 
-// Currently available backend WebSocket trains
-const liveSupportedTrains = ["12345", "12459"];
+  // Backend WebSocket supported trains
+  const liveSupportedTrains = ["12345", "12459"];
 
-const isLiveSupported = liveSupportedTrains.includes(
-  selectedTrainNumber
-);
+  const isLiveSupported = liveSupportedTrains.includes(
+    selectedTrainNumber
+  );
 
-const { liveData, connected } = useTrainWebSocket(
-  isLiveSupported ? selectedTrainNumber : null
-);
+  const { liveData, connected } = useTrainWebSocket(
+    isLiveSupported ? selectedTrainNumber : null
+  );
 
-// Use live backend data when available.
-// Otherwise keep the existing static data.
-const displayTrain = {
-  ...selectedTrain,
-  delay: liveData?.current_delay_minutes ?? selectedTrain.delay,
-  prediction:
-    liveData?.predicted_delay_minutes ?? selectedTrain.prediction,
-  eta: liveData?.predicted_eta
-    ? new Date(liveData.predicted_eta).toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit",
-      })
-    : selectedTrain.eta,
-};
+  // Use live backend data when available.
+  // Otherwise use the existing static data.
+  const displayTrain = {
+    ...selectedTrain,
 
-const delayChange =
-  displayTrain.prediction - displayTrain.delay;
+    delay:
+      liveData?.current_delay_minutes ??
+      selectedTrain.delay,
+
+    prediction:
+      liveData?.predicted_delay_minutes ??
+      selectedTrain.prediction,
+
+    eta: liveData?.predicted_eta
+      ? new Date(
+          liveData.predicted_eta
+        ).toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+        })
+      : selectedTrain.eta,
+  };
+
+  const delayChange =
+    displayTrain.prediction - displayTrain.delay;
 
   return (
     <div className="app">
@@ -192,6 +202,7 @@ const delayChange =
       <header className="header">
         <div>
           <h1>Railway ETA Intelligence</h1>
+
           <p>
             Dynamic Train ETA & Delay Intelligence System
           </p>
@@ -199,7 +210,10 @@ const delayChange =
 
         <div className="system-status">
           <span className="status-dot"></span>
-{connected ? "Live Updates Connected" : "System Online"}
+
+          {connected
+            ? "Live Updates Connected"
+            : "System Online"}
         </div>
       </header>
 
@@ -209,14 +223,19 @@ const delayChange =
         <section className="selector-card">
 
           <div>
-            <span className="label">TRAIN SELECTION</span>
+            <span className="label">
+              TRAIN SELECTION
+            </span>
+
             <h2>Select Train</h2>
           </div>
 
           <select
             value={selectedTrainNumber}
             onChange={(event) =>
-              setSelectedTrainNumber(event.target.value)
+              setSelectedTrainNumber(
+                event.target.value
+              )
             }
           >
             {trains.map((train) => (
@@ -232,133 +251,197 @@ const delayChange =
         </section>
 
         {/* Train Information */}
-<section className="train-card">
+        <section className="train-card">
 
-  <div className="train-header">
+          <div className="train-header">
 
-    <div>
-      <span className="label">TRAIN</span>
+            <div>
+              <span className="label">
+                TRAIN
+              </span>
 
-      <h2>
-        {selectedTrain.number} {selectedTrain.name}
-      </h2>
-    </div>
+              <h2>
+                {selectedTrain.number}{" "}
+                {selectedTrain.name}
+              </h2>
+            </div>
 
-    <span className="running-badge">
-      RUNNING
-    </span>
-
-  </div>
-
-  {/* Route Progress */}
-  <div className="route-progress">
-  {selectedTrain.route.map((station, index) => {
-    const isCurrent = station.name === selectedTrain.currentStation;
-    const isNext = station.name === selectedTrain.nextStation;
-
-    return (
-      <React.Fragment key={station.code}>
-        <div
-          className={`route-stop ${
-            isCurrent ? "current" : isNext ? "next" : ""
-          }`}
-        >
-          <div className="stop-marker">
-            {isCurrent ? "🚆" : isNext ? "●" : "○"}
-          </div>
-
-          <div className="stop-info">
-            <span className="station-code">
-              {station.code}
+            <span className="running-badge">
+              RUNNING
             </span>
 
-            <strong>{station.name}</strong>
-
-            <span className="station-delay">
-              +{station.delay} min
-            </span>
           </div>
-        </div>
 
-        {index < selectedTrain.route.length - 1 && (
-          <div
-            className={`route-connector ${
-              index === 0 ? "active" : ""
-            }`}
-          ></div>
-        )}
-      </React.Fragment>
-    );
-  })}
-</div>
+          {/* Route Progress */}
+          <div className="route-progress">
 
-</section>
+            {selectedTrain.route.map(
+              (station, index) => {
+
+                const isCurrent =
+                  station.name ===
+                  selectedTrain.currentStation;
+
+                const isNext =
+                  station.name ===
+                  selectedTrain.nextStation;
+
+                return (
+                  <React.Fragment
+                    key={station.code}
+                  >
+
+                    <div
+                      className={`route-stop ${
+                        isCurrent
+                          ? "current"
+                          : isNext
+                          ? "next"
+                          : ""
+                      }`}
+                    >
+
+                      <div className="stop-marker">
+                        {isCurrent
+                          ? "🚆"
+                          : isNext
+                          ? "●"
+                          : "○"}
+                      </div>
+
+                      <div className="stop-info">
+
+                        <span className="station-code">
+                          {station.code}
+                        </span>
+
+                        <strong>
+                          {station.name}
+                        </strong>
+
+                        <span className="station-delay">
+                          +
+                          {station.delay} min
+                        </span>
+
+                      </div>
+
+                    </div>
+
+                    {index <
+                      selectedTrain.route.length -
+                        1 && (
+                      <div
+                        className={`route-connector ${
+                          index === 0
+                            ? "active"
+                            : ""
+                        }`}
+                      ></div>
+                    )}
+
+                  </React.Fragment>
+                );
+              }
+            )}
+
+          </div>
+
+        </section>
+
         {/* Statistics */}
         <section className="stats-grid">
 
+          {/* Current Delay */}
           <div className="stat-card">
-            <span>Current Delay</span>
+
+            <span>
+              Current Delay
+            </span>
 
             <strong>
-              +{selectedTrain.delay} min
+              +{displayTrain.delay.toFixed(1)} min
             </strong>
 
             <small>
-  Current operational delay
-</small>
+              Current operational delay
+            </small>
+
           </div>
 
+          {/* Predicted Delay */}
           <div className="stat-card">
-            <span>Predicted Delay</span>
+
+            <span>
+              Predicted Delay
+            </span>
 
             <strong>
-              +{selectedTrain.prediction} min
+              +{displayTrain.prediction.toFixed(1)} min
             </strong>
 
             <small>
-  At {selectedTrain.nextStation}
-</small>
+              At {selectedTrain.nextStation}
+            </small>
+
           </div>
 
+          {/* Predicted ETA */}
           <div className="stat-card">
-            <span>Predicted ETA</span>
+
+            <span>
+              Predicted ETA
+            </span>
 
             <strong>
-              {selectedTrain.eta}
+              {displayTrain.eta}
             </strong>
 
             <small>
               {selectedTrain.nextStation}
             </small>
+
           </div>
 
+          {/* Speed */}
           <div className="stat-card">
-            <span>Speed</span>
+
+            <span>
+              Speed
+            </span>
 
             <strong>
               {selectedTrain.speed} km/h
             </strong>
 
             <small>
-  Current running speed
-</small>
+              Current running speed
+            </small>
+
           </div>
+
+          {/* Delay Change */}
           <div className="stat-card">
-  <span>Delay Change</span>
 
-  <strong>
-    {delayChange >= 0 ? "+" : ""}
-    {delayChange} min
-  </strong>
+            <span>
+              Delay Change
+            </span>
 
- <small>
-  {delayChange > 0
-    ? "Delay increasing"
-    : delayChange < 0
-    ? "Delay recovering"
-    : "Delay stable"}
-</small>
-</div>
+            <strong>
+              {delayChange >= 0 ? "+" : ""}
+              {delayChange.toFixed(1)} min
+            </strong>
+
+            <small>
+              {delayChange > 0
+                ? "Delay increasing"
+                : delayChange < 0
+                ? "Delay recovering"
+                : "Delay stable"}
+            </small>
+
+          </div>
+
         </section>
 
         {/* Delay Intelligence */}
@@ -367,6 +450,7 @@ const delayChange =
           <div className="section-title">
 
             <div>
+
               <span className="label">
                 AI / ML
               </span>
@@ -374,6 +458,7 @@ const delayChange =
               <h2>
                 Delay Intelligence
               </h2>
+
             </div>
 
             <span className="prediction-badge">
@@ -384,6 +469,7 @@ const delayChange =
 
           <div className="prediction-content">
 
+            {/* Current Delay */}
             <div className="prediction-item">
 
               <span>
@@ -391,7 +477,7 @@ const delayChange =
               </span>
 
               <strong>
-                {selectedTrain.delay} min
+                {displayTrain.delay.toFixed(1)} min
               </strong>
 
             </div>
@@ -400,14 +486,16 @@ const delayChange =
               →
             </div>
 
+            {/* Predicted Delay */}
             <div className="prediction-item">
 
               <span>
-                Predicted at {selectedTrain.nextStation}
+                Predicted at{" "}
+                {selectedTrain.nextStation}
               </span>
 
               <strong>
-                {selectedTrain.prediction} min
+                {displayTrain.prediction.toFixed(1)} min
               </strong>
 
             </div>
@@ -416,6 +504,7 @@ const delayChange =
               →
             </div>
 
+            {/* Delay Change */}
             <div className="prediction-item">
 
               <span>
@@ -424,7 +513,7 @@ const delayChange =
 
               <strong>
                 {delayChange >= 0 ? "+" : ""}
-                {delayChange} min
+                {delayChange.toFixed(1)} min
               </strong>
 
             </div>
@@ -439,278 +528,450 @@ const delayChange =
 
             <p>
               The model predicts that the current{" "}
-              {selectedTrain.delay}-minute delay may
-              change to approximately{" "}
-              {selectedTrain.prediction} minutes at{" "}
+              {displayTrain.delay.toFixed(1)}
+              -minute delay may change to
+              approximately{" "}
+              {displayTrain.prediction.toFixed(1)}
+              {" "}minutes at{" "}
               {selectedTrain.nextStation}.
             </p>
 
           </div>
 
         </section>
+
         {/* System Overview */}
-<section className="overview-card">
+        <section className="overview-card">
 
-  <div className="section-title">
-    <div>
-      <span className="label">SYSTEM OVERVIEW</span>
-      <h2>Train Monitoring Summary</h2>
-    </div>
+          <div className="section-title">
 
-    <span className="prediction-badge">
-      Live Dashboard
-    </span>
-  </div>
+            <div>
 
-  <div className="overview-grid">
+              <span className="label">
+                SYSTEM OVERVIEW
+              </span>
 
-    <div className="overview-item">
-      <span className="overview-icon">🚆</span>
-      <div>
-        <strong>{trains.length}</strong>
-        <small>Trains Monitored</small>
-      </div>
-    </div>
+              <h2>
+                Train Monitoring Summary
+              </h2>
 
-    <div className="overview-item">
-      <span className="overview-icon">📍</span>
-      <div>
-        <strong>{selectedTrain.currentStation}</strong>
-        <small>Current Location</small>
-      </div>
-    </div>
+            </div>
 
-    <div className="overview-item">
-      <span className="overview-icon">🎯</span>
-      <div>
-        <strong>{selectedTrain.nextStation}</strong>
-        <small>Next Station</small>
-      </div>
-    </div>
+            <span className="prediction-badge">
+              Live Dashboard
+            </span>
 
-    <div className="overview-item">
-      <span className="overview-icon">📊</span>
-      <div>
-        <strong>
-          {selectedTrain.route.length}
-        </strong>
-        <small>Upcoming Stations</small>
-      </div>
-    </div>
+          </div>
 
-  </div>
+          <div className="overview-grid">
 
-</section>
+            <div className="overview-item">
+
+              <span className="overview-icon">
+                🚆
+              </span>
+
+              <div>
+
+                <strong>
+                  {trains.length}
+                </strong>
+
+                <small>
+                  Trains Monitored
+                </small>
+
+              </div>
+
+            </div>
+
+            <div className="overview-item">
+
+              <span className="overview-icon">
+                📍
+              </span>
+
+              <div>
+
+                <strong>
+                  {selectedTrain.currentStation}
+                </strong>
+
+                <small>
+                  Current Location
+                </small>
+
+              </div>
+
+            </div>
+
+            <div className="overview-item">
+
+              <span className="overview-icon">
+                🎯
+              </span>
+
+              <div>
+
+                <strong>
+                  {selectedTrain.nextStation}
+                </strong>
+
+                <small>
+                  Next Station
+                </small>
+
+              </div>
+
+            </div>
+
+            <div className="overview-item">
+
+              <span className="overview-icon">
+                📊
+              </span>
+
+              <div>
+
+                <strong>
+                  {selectedTrain.route.length}
+                </strong>
+
+                <small>
+                  Upcoming Stations
+                </small>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
         {/* Delay Propagation */}
-<section className="propagation-card">
+        <section className="propagation-card">
 
-  <div className="section-title">
-    <div>
-      <span className="label">PREDICTION</span>
-      <h2>Delay Propagation</h2>
-    </div>
+          <div className="section-title">
 
-    <span className="prediction-badge">
-      Future Delay Forecast
-    </span>
-  </div>
+            <div>
 
-  <p className="propagation-description">
-    Predicted delay across the remaining route.
-  </p>
+              <span className="label">
+                PREDICTION
+              </span>
 
-  <div className="propagation-chart">
+              <h2>
+                Delay Propagation
+              </h2>
 
-    {/* Current Delay */}
-    <div className="propagation-point">
+            </div>
 
-      <div className="propagation-value">
-        {selectedTrain.delay} min
-      </div>
+            <span className="prediction-badge">
+              Future Delay Forecast
+            </span>
 
-      <div
-        className="propagation-bar"
-        style={{
-          height: `${Math.max(selectedTrain.delay * 8, 30)}px`,
-        }}
-      ></div>
+          </div>
 
-      <strong>
-        {selectedTrain.currentStation}
-      </strong>
+          <p className="propagation-description">
+            Predicted delay across the remaining route.
+          </p>
 
-      <small>
-        Current
-      </small>
+          <div className="propagation-chart">
 
-    </div>
+            {/* Current Delay */}
+            <div className="propagation-point">
 
-    {/* Future Stations */}
-    {selectedTrain.route.map((station, index) => {
-  const previousDelay =
-    index === 0
-      ? selectedTrain.delay
-      : selectedTrain.route[index - 1].delay;
+              <div className="propagation-value">
+                {displayTrain.delay.toFixed(1)} min
+              </div>
 
-  const delayChange = station.delay - previousDelay;
+              <div
+                className="propagation-bar"
+                style={{
+                  height: `${Math.max(
+                    displayTrain.delay * 8,
+                    30
+                  )}px`,
+                }}
+              ></div>
 
-  return (
+              <strong>
+                {selectedTrain.currentStation}
+              </strong>
 
-      <div
-        className="propagation-point"
-        key={station.code}
-      >
+              <small>
+                Current
+              </small>
 
-        <div className="propagation-value">
-          {station.delay} min
-        </div>
+            </div>
 
-        <div
-          className="propagation-bar"
-          style={{
-            height: `${Math.max(station.delay * 8, 30)}px`,
-          }}
-        ></div>
+            {/* Future Stations */}
+            {selectedTrain.route.map(
+              (station, index) => {
 
-        <strong>
-          {station.name}
-        </strong>
+                const previousDelay =
+                  index === 0
+                    ? displayTrain.delay
+                    : selectedTrain.route[
+                        index - 1
+                      ].delay;
 
-       <small>
-  {station.code}
-</small>
+                const stationDelay =
+                  index === 0
+                    ? displayTrain.prediction
+                    : station.delay;
 
-<span className="propagation-change">
-  {delayChange > 0
-    ? `+${delayChange} min`
-    : delayChange < 0
-    ? `${delayChange} min`
-    : "Stable"}
-</span>
+                const stationDelayChange =
+                  stationDelay - previousDelay;
 
-      </div>
+                return (
 
+                  <div
+                    className="propagation-point"
+                    key={station.code}
+                  >
 
-  );
-})}
+                    <div className="propagation-value">
+                      {stationDelay.toFixed(1)} min
+                    </div>
 
+                    <div
+                      className="propagation-bar"
+                      style={{
+                        height: `${Math.max(
+                          stationDelay * 8,
+                          30
+                        )}px`,
+                      }}
+                    ></div>
 
-  </div>
+                    <strong>
+                      {station.name}
+                    </strong>
 
-</section>
-{/* Interactive Map */}
-<section className="map-card">
+                    <small>
+                      {station.code}
+                    </small>
 
-  <div className="section-title">
+                    <span className="propagation-change">
 
-    <div>
-      <span className="label">
-        LIVE ROUTE
-      </span>
+                      {stationDelayChange > 0
+                        ? `+${stationDelayChange.toFixed(
+                            1
+                          )} min`
+                        : stationDelayChange < 0
+                        ? `${stationDelayChange.toFixed(
+                            1
+                          )} min`
+                        : "Stable"}
 
-      <h2>
-        Train Route Map
-      </h2>
-    </div>
+                    </span>
 
-    <span className="prediction-badge">
-      Interactive
-    </span>
+                  </div>
 
-  </div>
+                );
+              }
+            )}
 
-  <TrainMap train={selectedTrain} />
+          </div>
 
-</section>
-<section className="map-card">
-  <h2>3D Railway Visualization</h2>
-  <p>
-    Interactive 3D view of the train and railway track.
-  </p>
+        </section>
 
-  <Train3D />
-</section>
+        {/* Interactive Map */}
+        <section className="map-card">
+
+          <div className="section-title">
+
+            <div>
+
+              <span className="label">
+                LIVE ROUTE
+              </span>
+
+              <h2>
+                Train Route Map
+              </h2>
+
+            </div>
+
+            <span className="prediction-badge">
+              Interactive
+            </span>
+
+          </div>
+
+          <TrainMap train={selectedTrain} />
+
+        </section>
+
+        {/* 3D Visualization */}
+        <section className="map-card">
+
+          <h2>
+            3D Railway Visualization
+          </h2>
+
+          <p>
+            Interactive 3D view of the train and railway track.
+          </p>
+
+          <Train3D />
+
+        </section>
+
         {/* Upcoming Stations */}
         <section className="map-card">
-  <div className="section-header">
-    <div>
-      <h2>Upcoming Stations</h2>
-      <p>Predicted arrival and delay across the remaining route.</p>
-    </div>
 
-    <span className="prediction-badge">
-      ML Prediction
-    </span>
-  </div>
+          <div className="section-header">
 
-  <div className="table-wrapper">
-    <table className="stations-table">
-      <thead>
-        <tr>
-          <th>Station</th>
-          <th>Scheduled Arrival</th>
-          <th>Predicted Arrival</th>
-          <th>Predicted Delay</th>
-          <th>Delay Change</th>
-        </tr>
-      </thead>
+            <div>
 
-      <tbody>
-        {selectedTrain.route.map((station, index) => {
-          const previousDelay =
-            index === 0
-              ? selectedTrain.delay
-              : selectedTrain.route[index - 1].delay;
+              <h2>
+                Upcoming Stations
+              </h2>
 
-          const delayChange = station.delay - previousDelay;
+              <p>
+                Predicted arrival and delay across
+                the remaining route.
+              </p>
 
-          return (
-            <tr key={station.code}>
-              <td>
-                <strong>{station.name}</strong>
-                <span className="table-code">
-                  {station.code}
-                </span>
-              </td>
+            </div>
 
-              <td>
-  {station.scheduled}
-</td>
+            <span className="prediction-badge">
+              ML Prediction
+            </span>
 
-<td>
-  {station.predicted}
-</td>
+          </div>
 
-              <td>
-                <span className="delay-value">
-                  +{station.delay} min
-                </span>
-              </td>
+          <div className="table-wrapper">
 
-              <td>
-                <span
-                  className={
-                    delayChange > 0
-                      ? "delay-increase"
-                      : delayChange < 0
-                      ? "delay-recovery"
-                      : "delay-stable"
+            <table className="stations-table">
+
+              <thead>
+
+                <tr>
+
+                  <th>
+                    Station
+                  </th>
+
+                  <th>
+                    Scheduled Arrival
+                  </th>
+
+                  <th>
+                    Predicted Arrival
+                  </th>
+
+                  <th>
+                    Predicted Delay
+                  </th>
+
+                  <th>
+                    Delay Change
+                  </th>
+
+                </tr>
+
+              </thead>
+
+              <tbody>
+
+                {selectedTrain.route.map(
+                  (station, index) => {
+
+                    const previousDelay =
+                      index === 0
+                        ? displayTrain.delay
+                        : selectedTrain.route[
+                            index - 1
+                          ].delay;
+
+                    const stationDelay =
+                      index === 0
+                        ? displayTrain.prediction
+                        : station.delay;
+
+                    const delayChange =
+                      stationDelay -
+                      previousDelay;
+
+                    return (
+
+                      <tr key={station.code}>
+
+                        <td>
+
+                          <strong>
+                            {station.name}
+                          </strong>
+
+                          <span className="table-code">
+                            {station.code}
+                          </span>
+
+                        </td>
+
+                        <td>
+                          {station.scheduled}
+                        </td>
+
+                        <td>
+                          {index === 0
+                            ? displayTrain.eta
+                            : station.predicted}
+                        </td>
+
+                        <td>
+
+                          <span className="delay-value">
+                            +
+                            {stationDelay.toFixed(1)}
+                            {" "}min
+                          </span>
+
+                        </td>
+
+                        <td>
+
+                          <span
+                            className={
+                              delayChange > 0
+                                ? "delay-increase"
+                                : delayChange < 0
+                                ? "delay-recovery"
+                                : "delay-stable"
+                            }
+                          >
+
+                            {delayChange > 0
+                              ? `+${delayChange.toFixed(
+                                  1
+                                )} min`
+                              : delayChange < 0
+                              ? `${delayChange.toFixed(
+                                  1
+                                )} min`
+                              : "Stable"}
+
+                          </span>
+
+                        </td>
+
+                      </tr>
+
+                    );
                   }
-                >
-                  {delayChange > 0
-                    ? `+${delayChange} min`
-                    : delayChange < 0
-                    ? `${delayChange} min`
-                    : "Stable"}
-                </span>
-              </td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
-  </div>
-</section>
+                )}
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </section>
+
       </main>
 
       <footer>

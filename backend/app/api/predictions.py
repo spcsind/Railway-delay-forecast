@@ -2,7 +2,8 @@ from datetime import datetime
 
 from fastapi import APIRouter, HTTPException
 
-from app.api.trains import TRAIN_DATA
+from app.db.database import SessionLocal
+from app.db.models import Train
 from app.schemas.train import TrainPrediction
 from app.services.eta_service import calculate_eta_details
 from app.services.train_service import train_prediction_service
@@ -17,7 +18,17 @@ router = APIRouter(
 @router.get("/{train_number}", response_model=TrainPrediction)
 def get_train_prediction(train_number: str):
 
-    train = TRAIN_DATA.get(train_number)
+    db = SessionLocal()
+
+    try:
+        train = (
+            db.query(Train)
+            .filter(Train.train_number == train_number)
+            .first()
+        )
+
+    finally:
+        db.close()
 
     if train is None:
         raise HTTPException(
@@ -25,18 +36,18 @@ def get_train_prediction(train_number: str):
             detail="Train not found"
         )
 
-    current_delay = train["delay_minutes"]
-    distance_to_next = train["distance_to_next"]
-    scheduled_travel_minutes = train["scheduled_travel_minutes"]
+    # Prototype live values
+    current_delay = 8.0
+    distance_to_next = 28.0
+    scheduled_travel_minutes = 19.0
+    scheduled_arrival = datetime.fromisoformat(
+        "2026-09-19T10:51:00"
+    )
 
     predicted_delay = train_prediction_service.predict_future_delay(
         current_delay=current_delay,
         distance_to_next=distance_to_next,
         scheduled_travel_minutes=scheduled_travel_minutes,
-    )
-
-    scheduled_arrival = datetime.fromisoformat(
-        train["scheduled_arrival"]
     )
 
     eta_details = calculate_eta_details(
@@ -46,8 +57,8 @@ def get_train_prediction(train_number: str):
     )
 
     return {
-        "train_number": train["train_number"],
-        "next_station": train["next_station"],
+        "train_number": train.train_number,
+        "next_station": "Jalandhar",
         "current_delay_minutes": current_delay,
         "predicted_delay_minutes": predicted_delay,
         "delay_change_minutes": eta_details["delay_change_minutes"],
