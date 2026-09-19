@@ -2,7 +2,12 @@ import requests
 import pandas as pd
 from xgboost import XGBRegressor
 
-API_KEY = "rg_f8aed34a14bc430ab353c7d2a4418469"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+API_KEY = os.getenv("RAILRADAR_API_KEY")
 
 TRAIN_NUMBER = input("Enter train number: ").strip()
 
@@ -13,7 +18,7 @@ TRAIN_NUMBER = input("Enter train number: ").strip()
 url = f"https://api.railradar.in/v1/trains/{TRAIN_NUMBER}/live"
 
 headers = {
-    "Authorization": f"Bearer rg_f8aed34a14bc430ab353c7d2a4418469"
+    "Authorization": f"Bearer {API_KEY}"
 }
 
 response = requests.get(url, headers=headers)
