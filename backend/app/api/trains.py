@@ -1,6 +1,8 @@
 from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
+import asyncio
 
-from app.schemas.train import TrainResponse, TrainStatus
+from app.services.simulator import simulate_train_updates
+from app.schemas.train import TrainStatus
 from app.websocket.manager import connection_manager
 
 router = APIRouter(
@@ -84,6 +86,13 @@ async def train_websocket(
         websocket,
     )
 
+    simulator_task = asyncio.create_task(
+        simulate_train_updates(
+            train_number,
+            TRAIN_DATA[train_number],
+        )
+    )
+
     try:
         while True:
             await websocket.receive_text()
@@ -93,3 +102,5 @@ async def train_websocket(
             train_number,
             websocket,
         )
+
+        simulator_task.cancel()
