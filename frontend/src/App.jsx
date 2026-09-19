@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import TrainMap from "./components/TrainMap";
+import useTrainWebSocket from "./hooks/useTrainWebSocket";
 import Train3D from "./components/Train3D";
 const trains = [
   {
@@ -151,12 +152,38 @@ const trains = [
 function App() {
   const [selectedTrainNumber, setSelectedTrainNumber] = useState("12345");
 
-  const selectedTrain = trains.find(
-    (train) => train.number === selectedTrainNumber
-  );
+ const selectedTrain = trains.find(
+  (train) => train.number === selectedTrainNumber
+);
 
-  const delayChange =
-    selectedTrain.prediction - selectedTrain.delay;
+// Currently available backend WebSocket trains
+const liveSupportedTrains = ["12345", "12459"];
+
+const isLiveSupported = liveSupportedTrains.includes(
+  selectedTrainNumber
+);
+
+const { liveData, connected } = useTrainWebSocket(
+  isLiveSupported ? selectedTrainNumber : null
+);
+
+// Use live backend data when available.
+// Otherwise keep the existing static data.
+const displayTrain = {
+  ...selectedTrain,
+  delay: liveData?.current_delay_minutes ?? selectedTrain.delay,
+  prediction:
+    liveData?.predicted_delay_minutes ?? selectedTrain.prediction,
+  eta: liveData?.predicted_eta
+    ? new Date(liveData.predicted_eta).toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+      })
+    : selectedTrain.eta,
+};
+
+const delayChange =
+  displayTrain.prediction - displayTrain.delay;
 
   return (
     <div className="app">
@@ -172,7 +199,7 @@ function App() {
 
         <div className="system-status">
           <span className="status-dot"></span>
-          System Online
+{connected ? "Live Updates Connected" : "System Online"}
         </div>
       </header>
 

@@ -42,4 +42,4 @@ async def simulate_train_updates(train_number: str, train_data: dict):
             message,
         )
 
-        await asyncio.sleep(10)
+        await asyncio.sleep(30)
